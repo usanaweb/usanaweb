@@ -1,6 +1,6 @@
 # Usa na Web
 
-É um site desenvolvido, por mim Paula Oliveira, para programadores e designers consultarem como guia pra construir sites com mais usabilidade e acessibilidade.
+É um site desenvolvido, por mim Paula Oliveira, para programadores e designers consultarem como guia para construir sites com mais usabilidade e acessibilidade.
 
 ## Sobre o Projeto
 
