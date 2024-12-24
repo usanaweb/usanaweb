@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content= "Conheça mais sobre a nossa história do Usa na Web, nossos objetivos como empresa e nosso endereço para contato.">
+        <title>Usa na Web</title>
+    
+        <!--Fontes do Google-->
+        <!--Reddit Sans-->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        </noscript>
+
+    
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    
+        <!-- Meu ao CSS-->
+        <link rel="stylesheet" href="sobre.css">
+
+        <style>
+            /*Padrão*/
+    .conteudo a:visited {
+    color: purple; /* Cor para links visitados */
+    }
+
+    main a.botao-enviar:visited {
+    color: #ffffff; /* Mantém a cor padrão dos botões */
+}
+
+    .fonte-mono{
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .fonte-sans{
+    font-family: "Reddit Sans", serif !important;
+    }
+    
+    
+    .texto-vermelho{
+    color: #9F2B2F;
+    }
+    
+    .texto-azul{
+    color: #2F5499;
+    }
+
+    .texto-verde{
+    color: #475E18;
+    
+    }
+    
+    .texto-cinza{
+    color: #595959;
+    }
+    
+    .texto-branco{
+    color: #ffffff;
+    }
+    
+    .texto-preto{
+    color: #0D0D0D !important;
+    }
+    
+    .sem-fundo{
+    background-color: transparent;
+    }
+    
+    .fundo-vermelho{
+    background: #9F2B2F;
+    }
+    
+    .fundo-vermelho-claro{
+    background: #FFF8FA;
+    }
+    
+    .fundo-azul{
+    background: #2F5499;
+    }
+
+    .fundo-azul-claro{
+    background: #F0FBFF;
+    }
+    
+    .fundo-verde{
+    background: #475E18;
+    
+    }
+    
+    .fundo-cinza{
+    background: #595959;
+    }
+    
+    .fundo-cinza-claro{
+    background: #FCFCFC;
+    }
+    
+    .fundo-cinza-medio{
+    background: #181818;
+    }
+    
+    .fundo-branco{
+    background: #ffffff;
+    }
+    
+    .fundo-preto{
+    background: #0D0D0D;
+    }
+    
+    /*Botão-Padrão*/
+    
+    .botão-sombra-branca {
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para a esquerda */
+    }
+    
+    .botão-sombra-preta {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para a esquerda */
+    }
+    
+    /*Cabeçalho*/
+    
+    input.search-bar:focus {
+    box-shadow: 0 0 6px 0px #FF5733;
+    border-color: #FF5733; 
+    }
+    
+    input.search-bar:focus {
+    outline: none !important;
+    }
+    
+    /* Definir cor do focus-ring em links, botões ou outros elementos focáveis */
+    a:focus-visible, #button1:focus-visible, #button2:focus-visible, #button3:focus-visible,  input:focus-visible, input.search-bar:focus-visible, h1.foco:focus-visible, h2.foco:focus-visible, textarea:focus-visible, .foco:focus-visible {
+    outline: 2px solid #FF5733 !important; 
+    outline-offset: 4px !important;
+    }
+    
+    .usabilidade, .acessibilidade, .ferramentas, .sobre {
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .usabilidade-cheia{
+    color: white;
+    border-radius: 15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    background: #475E18;
+    }
+    
+    .acessibilidade-cheia{
+    color: white;
+    border-radius: 15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    background: #31579E;
+    }
+    
+    .ferramentas-cheia{
+    color: white;
+    border-radius:15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    background: #9F2B2F;
+    }
+    
+    .sobre-cheia{
+    color: white;
+    border-radius: 15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    background: #595959;
+    }
+    
+    .usabilidade:hover {
+    background: #475E18;
+    color: white;
+    }
+    
+    .usabilidade-ativa {
+    background: #475E18;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .usabilidade-linha {
+    background: #475E18;
+    height: 16px;
+    width: 100%;
+    }
+    
+    .acessibilidade:hover {
+    background: #31579E;
+    color: white;
+    }
+    
+    .acessibilidade-ativa {
+    background: #31579E;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .acessibilidade-linha {
+    background: #31579E;
+    height: 16px;
+    width: 100%;
+    }
+    
+    .ferramentas:hover {
+    background: #9F2B2F;
+    color: white;
+    }
+    
+    .ferramentas-ativa {
+    background: #9F2B2F;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .ferramentas-linha {
+    background: #9F2B2F;
+    height: 16px;
+    width: 100%;
+    }
+    
+    .sobre:hover {
+    background: #595959;
+    color: white;
+    }
+    
+    .sobre-ativa {
+    background: #595959;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .sobre-linha {
+    background: #595959;
+    height: 16px;
+    width: 100%;
+    }
+    
+    .botao-acessibilidadetexto{
+    border-radius: 0px 0px 10px 10px ;
+    border: none;
+    background: #F2F2F2;
+    color: #0D0D0D;
+    font-family: "Reddit Mono", serif !important;
+    font-weight: 700;
+    }
+    
+    .botao-acessibilidadeconstraste{
+    border-radius: 0px 0px 10px 10px ;
+    border: none;
+    background: #F2F2F2;
+    color: #0D0D0D;
+    font-family: "Reddit Mono", serif !important;
+    font-weight: 700;
+    }
+    
+    .barra-de-pesquisa{
+    border-color: white;
+    background: transparent;
+    border-radius: 50px !important;
+    }
+    
+    .skip-to-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    text-decoration: none;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    }
+    
+    .skip-to-content:focus {
+    transform: translateY(0);
+    }
+    
+    .navbar{
+    display: block !important;
+    }
+    
+    .navbar-toggler{
+    color: transparent;
+    border-color: transparent;
+    }
+    
+    .text-pesquisaicone{
+    font-size: 100px;
+    
+    }
+    
+    .search-bar {
+    color: #0D0D0D !important; /* Define o texto digitado em branco */
+    caret-color: white; /* Define o cursor em branco */
+    background-color: transparent; /* Opcional: deixa o fundo transparente */
+    }
+    
+    @media (max-width: 576px) {
+    .usabilidade-cheia, .acessibilidade-cheia, .ferramentas-cheia, .sobre-cheia {
+    font-size: 16px; 
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .usabilidade-cheia, .acessibilidade-cheia, .ferramentas-cheia, .sobre-cheia {
+    font-size: 21px; 
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .usabilidade, .acessibilidade, .ferramentas, .sobre {
+    font-size: 20px; 
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .usabilidade, .acessibilidade, .ferramentas, .sobre {
+    font-size: 20px; 
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .usabilidade, .acessibilidade, .ferramentas, .sobre {
+    font-size: 24px; 
+    }
+    }
+    
+    /*Rodapé*/
+    
+    .rodape{
+    border-radius: 45px 45px 0px 0px;
+    
+    }
+    
+    .titulo-menu-rodape{
+    font-family: "Reddit Sans", serif;
+    font-weight: 700;
+    }
+    
+    .subtitulo-menu-rodape{
+    font-family: "Reddit Mono", serif;
+    font-weight: 400;
+    text-decoration: none;
+    }
+    
+    .subtitulo-menu-rodape:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+    }
+    
+    form#form input[type="text"]:focus,
+    form#form input[type="email"]:focus,
+    form#form textarea:focus {
+    box-shadow: 0 0 6px 2px #FF5733; /* Glow suave laranja */
+    border-color: #FF5733; /* Borda combinando */
+    outline: none; /* Remove o outline padrão */
+    }
+    
+    .p-inicio2 {
+    font-family: "Reddit Sans", serif !important;
+    font-weight: 500 ;
+    }
+    
+    .botao-enviar{
+    border-radius: 5px 5px 5px 5px ;
+    border: none;
+    font-family: "Reddit Mono", serif !important;
+    font-weight: 800;
+    
+    }
+    
+    @media (max-width: 576px) {
+    .p-inicio2 {
+    font-size: 19px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .p-inicio2 {
+    font-size: 19px; 
+    text-align: left;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .titulo-menu-rodape {
+    font-size: 48px; 
+    text-align: left; 
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .subtitulo-menu-rodape{
+    font-size: 29px; 
+    text-align: left;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .botao-enviar {
+    font-size: 29px; 
+    text-align: left;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .altura-formulario-texto  {
+    height: 200px;
+    
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .titulo-menu-rodape {
+    font-size: 48px; 
+    text-align: left; 
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .subtitulo-menu-rodape{
+    font-size: 29px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .botao-enviar {
+    font-size: 29px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .altura-formulario-texto  {
+    height: 200px;
+    
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .p-inicio2 {
+    font-size: 16px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .titulo-menu-rodape {
+    font-size: 20px; 
+    text-align: left; 
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .subtitulo-menu-rodape {
+    font-size: 16px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .botao-enviar {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    
+    @media (min-width: 768px) {
+    .altura-formulario-texto  {
+    height: 150px;
+    
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .p-inicio2 {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .titulo-menu-rodape {
+    font-size: 25px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .subtitulo-menu-rodape{
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .botao-enviar {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .altura-formulario-texto  {
+    height: 150px;
+    
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .p-inicio2 {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .titulo-menu-rodape {
+    font-size: 35px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .subtitulo-menu-rodape{
+    font-size: 24px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .botao-enviar {
+    font-size: 24px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .altura-formulario-texto  {
+    height: 150px;
+    
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .p-inicio2 {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .subtitulo-menu-rodape {
+    font-size: 26px; 
+    text-align: left;
+    }
+    }
+    
+    
+    @media (min-width: 1400px) {
+    .botao-enviar {
+    font-size: 26px; 
+    text-align: left;
+    }
+    }
+    
+    
+    @media (min-width: 1400px) {
+    .titulo-menu-rodape {
+    font-size: 28px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .subtitulo-menu-rodape  {
+    font-size: 20px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .altura-formulario-texto  {
+    height: 150px;
+    
+    }
+    }
+        </style>
+    
+        <!--Bootstrap JS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+         <!--Java do Email-->
+       <!-- Pré-carregamento do EmailJS -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" as="script">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+        <!--Meu Java-->
+        <script src="outros.js" defer></script>
+    
+    </head>
+<body class="fundo-branco">
+    
+    <!--Cabeçalho/Menu-->
+    <header>
+        <!-- Link para pular para o conteúdo principal -->
+        <a href="#conteudo-principal" class="skip-to-content foco" tabindex="0">Pular para o conteúdo principal</a>
+
+        <div class="container-fluid p-0 m-0 fundo-preto">
+            <div class="container-fluid m-0">
+                <div class="row m-0 p-0 justify-content-end">
+                    <button class="botao-acessibilidadetexto p-3 me-3 mb-3 col-1 w-auto botão-sombra-branca" aria-label="A+">A+</button>
+                    <button class="botao-acessibilidadetexto p-3 me-3 mb-3 col-1 w-auto botão-sombra-branca" aria-label="A-">A-</button>
+                    <button id="botao-contraste" class="botao-acessibilidadeconstraste p-3 mb-3 me-3 col-1 w-auto botão-sombra-branca" aria-label="Contraste">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half me-2 mb-1" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+                        </svg>Contraste
+                    </button>                    
+                </div>
+            </div>
+        
+            <nav class="container-fluid m-0 ps-5 pe-xxl-5 ps-xxl-5 pe-xl-4 ps-xl-4 pe-lg-3 ps-lg-3 pe-md-4 ps-md-4 pb-md-0 px-sm-3 pb-sm-3 px-3 pb-0 navbar navbar-expand-md borda-verde">
+
+                <div class="row m-0 p-0 align-items-center d-flex justify-content-sm-between justify-content-between">
+                    <a href="index.html" class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-9 col-xxl-3 order-1 py-md-4 mb-0 mb-sm-0 mb-3 mt-0 d-md-flex p-lg-4 p-xxl-0 pe-xxl-0 mb-xxl-4 justify-content-md-between order-xxl-1">
+                        <img class="img-fluid" src="Imagens/logomenu.webp" alt="Página Inicial" width="401px" height="103px" loading="lazy">
+                    </a>
+        
+                    <!-- Botão do menu hamburguer -->
+                    <button class="navbar-toggler order-3 order-sm-3 col-2 col-sm-2 justify-content-end justify-content-sm-end" type="button" data-bs-toggle="collapse" data-bs-target="#menuhamburguer" aria-controls="menuhamburguer" aria-expanded="false" aria-label="Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" color="white" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+        
+                    <!-- Menu -->
+                    <!--Telas Pequenas-->
+                    <div class="collapse navbar-collapse navbar-nav p-0 m-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-7 order-3 justify-content-center align-self-end order-sm-4 order-4 order-xxl-2" id="menuhamburguer">
+                        <div class="d-md-none d-flex flex-wrap justify-content-center mt-5 mb-3 mx-3 justify-content-between fonte-mono"> <!-- Menu tela pequenas -->
+                            <a href="usabilidade.html" class="p-sm-2 px-sm-4 p-2 px-4 m-0 my-sm-3 ms-sm-3 col-sm-5 my-3 ms-3 col-5 text-center usabilidade-cheia">Usabilidade</a>
+                            <a href="acessibilidade.html" class="p-sm-2 px-sm-4 p-2 px-4 m-0 my-sm-3 me-sm-3 col-sm-5 my-3 me-3 col-5 text-center acessibilidade-cheia">Acessibilidade</a>
+                            <a href="ferramentas.html" class="p-sm-2 px-sm-4 p-2 px-4 m-0 my-sm-3 ms-sm-3 col-sm-5 my-3 ms-3 col-5 text-center ferramentas-cheia">Ferramentas</a>
+                            <a href="sobre.html" class="p-sm-2 px-sm-4 p-2 px-4 m-0 my-sm-3 me-sm-3 col-sm-5 my-3 me-3 col-5 text-center sobre-cheia">Sobre</a>
+                        </div>
+
+                        <!-- Tela Média e Grande -->
+                        <div class="d-none d-md-flex fonte-mono ms-3">
+                            <a href="usabilidade.html" class="p-2 px-3 me-0 m-0 usabilidade">Usabilidade</a>
+                            <a href="acessibilidade.html" class="p-2 px-3 me-0 m-0 acessibilidade">Acessibilidade</a>
+                            <a href="ferramentas.html" class="p-2 px-3 me-0 m-0 ferramentas">Ferramentas</a>
+                            <a href="sobre.html" class="p-2 px-3 me-0 m-0 sobre sobre-ativa">Sobre</a>
+                        </div>
+                    </div>
+        
+                    <!-- Barra de pesquisa -->
+                    <form class="col-2 col-sm-2 col-md-3 col-lg-3 col-xl-3 col-xxl-2 order-md-2 order-lg-3 p-0 m-0 pb-md-3 order-2 mx-auto my-4 my-sm-4 order-xxl-3 ps-xxl-2" role="search">
+                        <div class="input-group d-flex justify-content-center mx-2 justify-content-sm-center mx-sm-2">
+                            <input type="search" class="form-control border-2 d-none d-md-flex search-bar barra-de-pesquisa" placeholder="" aria-label="Barra de Pesquisa">
+                            <button type="submit" class="btn foco" aria-label="Pesquisar" tabindex="-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" color="white" fill="currentColor" class="bi bi-search text-pesquisaicone" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </nav>
+            <div class="sobre-linha d-none d-md-flex col-12"></div>
+            
+    </header>
+
+    <!--Conteúdo da Página-->
+    <main class="container-fluid m-0 p-0 fundo-branco">
+
+        <!--Capa-->
+        <div class="container-fluid" id="conteudo-principal">
+            <div class="row mb-5">
+
+                <div class="d-flex fundo-preto m-0 p-0 justify-content-between justify-content-sm-around">
+                    <h1 class="col-8 col-xxl-6 col-xl-7 col-lg-6 col-md-7 col-sm-7 texto-branco titulo-paginas-sobre text-center d-flex justify-content-center align-items-center foco" tabindex="0">Sobre o Guia</h1>
+                    <img class="col-4 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 img-fluid" aria-hidden="true" src="Imagens/Sobre Capa.webp" width="669px" height="350px">
+                </div>
+        </div>
+
+        <!--História-->
+        <div class="container-fluid m-0 p-0">
+            <div class="row mb-5 mx-3">
+
+                <div class="m-0 p-4 p-sm-4 p-sm-4 p-md-4 p-lg-4 p-xl-5 p-xxl-5">
+                    <h2 class="ps-0 mb-3 ps-xxl-0 mb-xxl-3 ps-xl-0 mb-xl-3 ps-lg-0 mb-lg-3 ps-md-0 mb-md-3 ps-sm-0 mb-sm-3 texto-azul subtitulo-paginas-sobre foco" tabindex="0">História</h2>
+                    <p class=" col-12 p-inicio-sobre">
+                        Olá! Sou a Paula Oliveira, idealizadora deste projeto. O site surgiu da minha necessidade como estudante de UX e Web Design de acessar materiais sobre usabilidade e acessibilidade voltado para sites de forma rápida e em um único ambiente.  Além disso, ao compreender que a internet é um ambiente pouco inclusivo para as pessoas com deficiência, ao impedir de ter acesso à informação pela falta de acessibilidade, surgiu a ideia de construir o guia. Um guia para os profissionais e iniciantes na área instruindo a como construir sites com melhor usabilidade e acessibilidade para todos. O guia foi desenvolvido através do meu Trabalho de Conclusão de Curso “Usa na Web: Guia Prático de Acessibilidade e Usabilidade, melhorando a experiência do usuário em sites.” Foram 7 meses e meio desde a pesquisa teórica, aplicação de questionário com o usuário até o conclusão do site. As áreas de usabilidade e acessibilidade possuem conteúdos vastos por isso busquei colocar o máximo de informações que pude ao longo desses meses, mas obviamente que existe muito mais que neste guia, por isso inseri ao final dos artigos referências para o aprofundamento e pretendo futuramente inserir mais conteúdos no guia. Espero que o guia te ajude nos seus estudos e em seus projetos!
+
+                    </p>
+                </div>
+        </div>
+
+        <!-- Objetivos-->
+        <div class="container-fluid p-0">
+
+            <!--Título-->
+            <div class="m-0 p-4 p-sm-4 p-sm-4 p-md-4 p-lg-4 p-xl-4 p-xxl-4">
+                <h2 class="ps-0 mb-3 ps-xxl-4 mb-xxl-3 ps-xl-4 mb-xl-2 ps-lg-3 mb-lg-3 ps-md-2 mb-md-3 ps-sm-0 mb-sm-3 texto-verde subtitulo-paginas-sobre foco" tabindex="0">Objetivos</h2>
+            </div>
+
+            <div class="row row-cols-xxl-2 row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-sm-1 row-cols-1 mb-5 p-4 p-sm-4 p-sm-4 p-md-4 p-lg-4 p-xl-5 p-xxl-5 fundo-verde">
+
+                <!--Tópicos Pessoa-->
+                <div class="col fundo-verde d-flex flex-column flex-md-row align-items-center px-0 py-5 px-xxl-5 py-xxl-5 px-xl-3 py-xl-3 px-lg-4 py-lg-4 px-md-4 py-md-4 px-sm-4 py-sm-4">
+                    <!-- Imagem -->
+                    <img class="img-fluid col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-xxl-3 mb-xl-3 mb-lg-3 mb-md-0 mb-sm-5 mb-5 me-xxl-4 me-xl-4 me-lg-3 me-md-5 me-sm-3 me-3" src="Imagens/Profissional Fundo Branco.webp" alt="" aria-hidden="true" width="265px" height="265px" loading="lazy">
+                    <!-- Texto -->
+                    <div class="text-content ms-xxl-2 ms-xl-2 ms-md-2 ms-lg-2 ms-sm-2 ms-4">
+                        <p class="text-left p-inicio-sobre texto-branco">
+                            O conteúdo é estruturado para ser acessado de forma rápida, com exemplos reais, dicas de ferramentas para utilizar nos projetos e de leituras para aprofundar o assunto.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Tópicos Acessibilidade-->
+                <div class="col fundo-verde d-flex flex-column flex-md-row align-items-center px-0 py-5 px-xxl-5 py-xxl-5 px-xl-3 py-xl-3 px-lg-4 py-lg-4 px-md-4 py-md-4 px-sm-4 py-sm-4">
+                    <!-- Imagem -->
+                    <img class="img-fluid col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-xxl-3 mb-xl-3 mb-lg-3 mb-md-0 mb-sm-5 mb-5 me-xxl-4 me-xl-4 me-lg-3 me-md-5 me-sm-3 me-3" src="Imagens/Acessibilidade Fundo Branco.webp" alt="" aria-hidden="true" width="265px" height="265px" loading="lazy">
+                    <!-- Texto -->
+                    <div class="text-content ms-xxl-2 ms-xl-2 ms-md-2 ms-lg-2 ms-sm-2 ms-4">
+                        <p class="text-left p-inicio-sobre texto-branco">
+                            Estimular profissionais a tornar seus projetos mais acessíveis, para que todas a sociedade tenha acesso a informação, que atualmente se encontra em maior parte na internet.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Tópicos Livro-->
+                <div class="col fundo-verde d-flex flex-column flex-md-row align-items-center px-0 py-5 px-xxl-5 py-xxl-5 px-xl-3 py-xl-3 px-lg-4 py-lg-4 px-md-4 py-md-4 px-sm-4 py-sm-4">
+                    <!-- Imagem -->
+                    <img class="img-fluid col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-xxl-3 mb-xl-3 mb-lg-3 mb-md-0 mb-sm-5 mb-5 me-xxl-4 me-xl-4 me-lg-3 me-md-5 me-sm-3 me-3" src="Imagens/Teoria Fundo Branco.webp" alt="" aria-hidden="true" width="265px" height="265px" loading="lazy">
+                    <!-- Texto -->
+                    <div class="text-content ms-xxl-2 ms-xl-2 ms-md-2 ms-lg-2 ms-sm-2 ms-4">
+                        <p class="text-left p-inicio-sobre texto-branco">
+                            Ajudar os iniciantes e interessados em Usabilidade e Acessibilidade por onde iniciar os seus estudos, fornecendo uma base e indicando materiais para o aprofundamento.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Tópicos Cérebro-->
+                <div class="col fundo-verde d-flex flex-column flex-md-row align-items-center px-0 py-5 px-xxl-5 py-xxl-5 px-xl-3 py-xl-3 px-lg-4 py-lg-4 px-md-4 py-md-4 px-sm-4 py-sm-4">
+                    <!-- Imagem -->
+                    <img class="img-fluid col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-xxl-3 mb-xl-3 mb-lg-3 mb-md-0 mb-sm-5 mb-5 me-xxl-4 me-xl-4 me-lg-3 me-md-5 me-sm-3 me-3" src="Imagens/Dificuldade Fundo Branco.webp" alt="" aria-hidden="true" width="265px" height="265px" loading="lazy">
+                    <!-- Texto -->
+                    <div class="text-content ms-xxl-2 ms-xl-2 ms-md-2 ms-lg-2 ms-sm-2 ms-4">
+                        <p class="text-left p-inicio-sobre texto-branco">
+                            Desmitificar que inserir acessibilidade e usabilidade nos projetos web é muito difícil.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Tópicos Conteúdos-->
+                <div class="col fundo-verde d-flex flex-column flex-md-row align-items-center px-0 py-5 px-xxl-5 py-xxl-5 px-xl-3 py-xl-3 px-lg-4 py-lg-4 px-md-4 py-md-4 px-sm-4 py-sm-4">
+                    <!-- Imagem -->
+                    <img class="img-fluid col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-xxl-3 mb-xl-3 mb-lg-3 mb-md-0 mb-sm-5 mb-5 me-xxl-4 me-xl-4 me-lg-3 me-md-5 me-sm-3 me-3" src="Imagens/Conteúdo Fundo Branco.webp" alt="" aria-hidden="true" width="265px" height="265px" loading="lazy">
+                    <!-- Texto -->
+                    <div class="text-content ms-xxl-2 ms-xl-2 ms-md-2 ms-lg-2 ms-sm-2 ms-4">
+                        <p class="text-left p-inicio-sobre texto-branco">
+                            Reunir todo o conteúdo sobre Acessibilidade e Usabilidade voltado para sites em um só lugar, para facilitar o acesso.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Tópicos Dinheiro-->
+                <div class="col fundo-verde d-flex flex-column flex-md-row align-items-center px-0 py-5 px-xxl-5 py-xxl-5 px-xl-3 py-xl-3 px-lg-4 py-lg-4 px-md-4 py-md-4 px-sm-4 py-sm-4">
+                    <!-- Imagem -->
+                    <img class="img-fluid col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-xxl-3 mb-xl-3 mb-lg-3 mb-md-0 mb-sm-5 mb-5 me-xxl-4 me-xl-4 me-lg-3 me-md-5 me-sm-3 me-3" src="Imagens/Gratuito Fundo Branco.webp" alt="" aria-hidden="true" width="265px" height="265px" loading="lazy">
+                    <!-- Texto -->
+                       <div class="text-content ms-xxl-2 ms-xl-2 ms-md-2 ms-lg-2 ms-sm-2 ms-4">
+                            <p class="text-left p-inicio-sobre texto-branco">
+                                Demonstrar como ambientes acessíveis e pensados na usabilidade podem trazer um retorno financeiro para as empresas.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Responsável-->
+        <div class="container-fluid m-0 p-0" id="responsavel">
+
+            <div class="row justify-content-around flex-column flex-md-row pt-5">
+                <!-- Texto -->
+                <div class="col-12 col-xxl-7 col-xl-7 col-lg-7 col-md-10 col-sm-12 px-5 ps-lg-5 px-md-0 px-sm-5">
+                    <h2 class="pb-3 pb-md-4 texto-vermelho subtitulo-paginas-sobre foco" tabindex="0">Responsável</h2>
+                    <p class="p-inicio-sobre pb-md-5 pb-sm-5 pb-5">
+                        Sou recém-formada em Design Gráfico e atuo na área há 2 anos. Durante a faculdade, conheci o UX Design através do projeto Sinqia na UEL, orientado pela Drª Vanessa Tavares de Oliveira Barros, especialista em Ergonomia e Usabilidade pela UFSC. Desde então, aprofundei meus estudos em UX, Acessibilidade e Web Design, através das disciplinas de Interface Homem-Computador, Ergonomia Visual e Programação de Interface disponibilizadas pelo curso. Por meio dessa base de conhecimento construída ao longo da faculdade e sob a orientação da Drª Cristiane Affonso de Almeida Zerbetto, especialista em Ergonomia pela UNESP, foi possível construir o guia. As áreas de Usabilidade e Acessibilidade me estimulam como designer a ser mais que um profissional, mas utilizar o meu trabalho para ajudar a vida das pessoas.
+                    </p>
+                </div>
+                
+                <div class="col-12 col-xxl-4 col-xl-4 col-lg-4 col-md-10 col-sm-12 px-md-0 text-center d-flex flex-column align-items-center justify-content-center px-5 pe-lg-5 px-md-0 px-sm-5">
+                    <img alt="" aria-hidden="true" class="img-fluid" src="Imagens/Responsável Sobre.webp" width="300px" height="300px" loading="lazy">
+                    <h3 class="mb-3 mt-3 subtopico-paginas-sobre texto-vermelho">Paula Oliveira</h3>
+                </div>
+                
+            
+            </div>
+        </div>
+
+        <!-- Contato -->
+        <div class="container-fluid d-flex justify-content-around my-5" id="contato">
+
+            <div class="row col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 py-xxl-5 py-xl-5 py-lg-5 py-md-4 py-sm-5 py-5 px-xxl-5 px-xl-5 px-lg-5 px-md-4 px-sm-4 px-4 fundo-azul mb-5 mt-5" id="borda-grande2">
+                
+                <!-- Coluna para o Título -->
+                <div class="">
+                    <h2 id="titulo-contato" class="subtitulo-paginas-sobre foco texto-branco" tabindex="0">Contato</h2>
+                    <h3 class="texto-branco subtopico-paginas-sobre my-5">Paula Oliveira</h3>
+                </div>
+            
+                <div class="d-flex align-items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-fill texto-branco me-3" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                    </svg>
+            
+                    <p class="p-email texto-branco mb-0">usabilidadenaweb@outlook.com</p>
+                    
+                </div>
+            
+                
+            </div>
+
+
+
+    </main>            
+
+      <!--Rodapé-->
+   <footer>
+
+    <div class="container-fluid m-0 p-0">
+        <div class=" row g-0 fundo-preto rodape justify-content-xxl-around justify-content-xl-around justify-content-lg-between justify-content-md-between justify-content-sm-center justify-content-center p-5">
+
+            <!--Explicação sobre o site-->
+            <div class="col-12 col-xxl-3 col-xl-4 col-lg-5 col-md-4 col-sm-12 justify-content-center">
+                <a href="index.html">
+                    <img class="img-fluid" alt="Página Inicial" src="Imagens/Logo Horizontal Branca.webp" width="501px" height="128px" loading="lazy">
+                </a>
+                <p class="texto-branco pt-3 p-inicio2">
+                    O Usa na Web é um guia de usabilidade e acessibilidade aplicado em sites. Seja para profissionais que precisam de um material para consulta ou iniciantes que desejam conhecer as áreas.
+                </p>
+            </div>
+
+            <!--Menu Rodapé-->
+            <div class="col-12 col-xxl-2 col-xl-3 col-lg-2 col-md-2 col-sm-12 ps-3 pt-4 pb-4 ps-xxl-5 pt-xxl-0 pb-xxl-0 ps-xl-5 pt-xl-0 pb-xl-0 ps-lg-0 pt-lg-0 pb-lg-0 ps-md-0 pt-md-0 pb-md-0 ps-sm-3 pt-sm-5 pb-sm-5">
+                <h2 class="texto-branco titulo-menu-rodape pb-2">Conteúdo</h2>
+                <ul class="list-unstyled">
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="usabilidade.html">Usabilidade</a></li>
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="acessibilidade.html">Acessibilidade</a></li>
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="ferramentas.html">Ferramentas</a></li>
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="sobre.html">Sobre</a></li>
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="sobre.html#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <!--Formulário Feedback-->
+            <form class="col-12 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12" id="form" >
+
+                <div class="mb-0" >
+                    <h3 class="form-label texto-branco titulo-menu-rodape text-decoration-none pb-3">Deixe seu comentário sobre o guia!</h3>
+                    <label class="texto-branco text-decoration-none pb-1" for="email">E-mail</label>
+                    <input class="form-control" placeholder="email@exemplo.com" type="text" name="email" id="email">
+
+                </div>
+
+                <div class="mb-5 mb-xxl-5 mb-xl-5 mb-lg-5 mb-md-4 mb-sm-5">
+                    <label class="form-label texto-branco text-decoration-none pt-3" for="mensagem">Mensagem</label>
+                    <textarea class="form-control resize altura-formulario-texto" placeholder="Digite sua mensagem" name="mensagem" id="mensagem"></textarea>
+                </div>
+                <div class="text-end">
+                    <input class="botao-enviar texto-preto fundo-branco botão-sombra-branca p-2 p-xxl-2 p-xl-2 p-lg-2 p-md-2 p-sm-2 "  type="submit" id="button" value="Enviar">
+                </div>
+
+              </form>
+        </div>
+    </div>
+
+    <!--Creditos a Desenvolvolvedora-->
+    <div class="container-fluid m-0 p-0">
+         <div class=" row g-0 fundo-cinza-medio ">
+            <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <p class="m-0 p-3 text-center texto-branco subtitulo-menu-rodape text-decoration-none">
+                    Desenvolvido por <a class="subtitulo-menu-rodape text-decoration-underline texto-branco" href="#">Paula Oliveira</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!--Widget Libras-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<!-- Meus Arquivos Java -->
+<script src="email.js" defer></script>
+
+</body>
+</html>
+
+
