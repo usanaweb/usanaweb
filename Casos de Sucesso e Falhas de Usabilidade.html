@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=" Neste artigo mostraremos alguns erros encontrados pela pesquisa da Baymard em sites de e-commerce, sites com versões para computador e dispositivos móveis, para que você identifique quais erros também estão presentes em seu site e como corrigi-los.">
+        <title>Casos de Sucesso e Falhas de Usabilidade</title>
+    
+        <!--Fontes do Google-->
+        <!--Reddit Sans-->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        </noscript>
+
+    
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    
+        <!-- Meu ao CSS-->
+        <link rel="stylesheet" href="artigo.css">
+
+        <style>
+            /*Padrão*/
+
+    .conteudo a:visited {
+    color: purple; /* Cor para links visitados */
+    }
+
+    main a.botao-enviar:visited {
+    color: #ffffff; /* Mantém a cor padrão dos botões */
+}
+
+    .fonte-mono{
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .fonte-sans{
+    font-family: "Reddit Sans", serif !important;
+    }
+    
+    
+    .texto-vermelho{
+    color: #9F2B2F;
+    }
+    
+    .texto-azul{
+    color: #2F5499;
+    }
+
+    .texto-verde{
+    color: #475E18;
+    
+    }
+    
+    .texto-cinza{
+    color: #595959;
+    }
+    
+    .texto-branco{
+    color: #ffffff;
+    }
+    
+    .texto-preto{
+    color: #0D0D0D !important;
+    }
+    
+    .sem-fundo{
+    background-color: transparent;
+    }
+    
+    .fundo-vermelho{
+    background: #9F2B2F;
+    }
+    
+    .fundo-vermelho-claro{
+    background: #FFF8FA;
+    }
+    
+    .fundo-azul{
+    background: #2F5499;
+    }
+
+    .fundo-azul-claro{
+    background: #F0FBFF;
+    }
+    
+    .fundo-verde{
+    background: #475E18;
+    
+    }
+
+    .fundo-verde-claro{
+    background: #F5FFE1;
+    }
+    
+    .fundo-cinza{
+    background: #595959;
+    }
+    
+    .fundo-cinza-claro{
+    background: #FCFCFC;
+    }
+    
+    .fundo-cinza-medio{
+    background: #181818;
+    }
+    
+    .fundo-branco{
+    background: #ffffff;
+    }
+    
+    .fundo-preto{
+    background: #0D0D0D;
+    }
+    
+    /*Botão-Padrão*/
+    
+    .botão-sombra-branca {
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para a esquerda */
+    }
+    
+    .botão-sombra-preta {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para a esquerda */
+    }
+    
+    /*Cabeçalho*/
+    
+    input.search-bar:focus {
+    box-shadow: 0 0 6px 0px #FF5733;
+    border-color: #FF5733; 
+    }
+    
+    input.search-bar:focus {
+    outline: none !important;
+    }
+    
+    /* Definir cor do focus-ring em links, botões ou outros elementos focáveis */
+    a:focus-visible, #button1:focus-visible, #button2:focus-visible, #button3:focus-visible,  input:focus-visible, input.search-bar:focus-visible, h1.foco:focus-visible, h2.foco:focus-visible, textarea:focus-visible, .foco:focus-visible {
+    outline: 2px solid #FF5733 !important; 
+    outline-offset: 4px !important;
+    }
+    
+    .usabilidade, .acessibilidade, .ferramentas, .sobre {
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .usabilidade-cheia{
+    color: white;
+    border-radius: 15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    background: #475E18;
+    }
+    
+    .acessibilidade-cheia{
+    color: white;
+    border-radius: 15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    background: #31579E;
+    }
+    
+    .ferramentas-cheia{
+    color: white;
+    border-radius:15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    background: #9F2B2F;
+    }
+    
+    .sobre-cheia{
+    color: white;
+    border-radius: 15px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    background: #595959;
+    }
+    
+    .usabilidade:hover {
+    background: #475E18;
+    color: white;
+    }
+    
+    .usabilidade-ativa {
+    background: #475E18;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .usabilidade-linha {
+    background: #475E18;
+    height: 16px;
+    width: 100%;
+    }
+    
+    .acessibilidade:hover {
+    background: #31579E;
+    color: white;
+    }
+    
+    .acessibilidade-ativa {
+    background: #31579E;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .acessibilidade-linha {
+    background: #31579E;
+    height: 16px;
+    width: 100%;
+    }
+    
+    .ferramentas:hover {
+    background: #9F2B2F;
+    color: white;
+    }
+    
+    .ferramentas-ativa {
+    background: #9F2B2F;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .ferramentas-linha {
+    background: #9F2B2F;
+    height: 16px;
+    width: 100%;
+    }
+    
+    .sobre:hover {
+    background: #595959;
+    color: white;
+    }
+    
+    .sobre-ativa {
+    background: #595959;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    text-decoration:none;
+    font-family: "Reddit Mono", serif !important;
+    }
+    
+    .sobre-linha {
+    background: #595959;
+    height: 16px;
+    width: 100%;
+    }
+    
+    .botao-acessibilidadetexto{
+    border-radius: 0px 0px 10px 10px ;
+    border: none;
+    background: #F2F2F2;
+    color: #0D0D0D;
+    font-family: "Reddit Mono", serif !important;
+    font-weight: 700;
+    }
+    
+    .botao-acessibilidadeconstraste{
+    border-radius: 0px 0px 10px 10px ;
+    border: none;
+    background: #F2F2F2;
+    color: #0D0D0D;
+    font-family: "Reddit Mono", serif !important;
+    font-weight: 700;
+    }
+    
+    .barra-de-pesquisa{
+    border-color: white;
+    background: transparent;
+    border-radius: 50px !important;
+    }
+    
+    .skip-to-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    text-decoration: none;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    }
+    
+    .skip-to-content:focus {
+    transform: translateY(0);
+    }
+    
+    .navbar{
+    display: block !important;
+    }
+    
+    .navbar-toggler{
+    color: transparent;
+    border-color: transparent;
+    }
+    
+    .text-pesquisaicone{
+    font-size: 100px;
+    
+    }
+    
+    .search-bar {
+    color: #0D0D0D !important; /* Define o texto digitado em branco */
+    caret-color: white; /* Define o cursor em branco */
+    background-color: transparent; /* Opcional: deixa o fundo transparente */
+    }
+    
+    @media (max-width: 576px) {
+    .usabilidade-cheia, .acessibilidade-cheia, .ferramentas-cheia, .sobre-cheia {
+    font-size: 16px; 
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .usabilidade-cheia, .acessibilidade-cheia, .ferramentas-cheia, .sobre-cheia {
+    font-size: 21px; 
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .usabilidade, .acessibilidade, .ferramentas, .sobre {
+    font-size: 20px; 
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .usabilidade, .acessibilidade, .ferramentas, .sobre {
+    font-size: 20px; 
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .usabilidade, .acessibilidade, .ferramentas, .sobre {
+    font-size: 24px; 
+    }
+    }
+    
+    /*Rodapé*/
+    
+    .rodape{
+    border-radius: 45px 45px 0px 0px;
+    
+    }
+    
+    .titulo-menu-rodape{
+    font-family: "Reddit Sans", serif;
+    font-weight: 700;
+    }
+    
+    .subtitulo-menu-rodape{
+    font-family: "Reddit Mono", serif;
+    font-weight: 400;
+    text-decoration: none;
+    }
+    
+    .subtitulo-menu-rodape:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+    }
+    
+    form#form input[type="text"]:focus,
+    form#form input[type="email"]:focus,
+    form#form textarea:focus {
+    box-shadow: 0 0 6px 2px #FF5733; /* Glow suave laranja */
+    border-color: #FF5733; /* Borda combinando */
+    outline: none; /* Remove o outline padrão */
+    }
+    
+    .p-inicio2 {
+    font-family: "Reddit Sans", serif !important;
+    font-weight: 500 ;
+    }
+    
+    .botao-enviar{
+    border-radius: 5px 5px 5px 5px ;
+    border: none;
+    font-family: "Reddit Mono", serif !important;
+    font-weight: 800;
+    
+    }
+    
+    @media (max-width: 576px) {
+    .p-inicio2 {
+    font-size: 19px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .p-inicio2 {
+    font-size: 19px; 
+    text-align: left;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .titulo-menu-rodape {
+    font-size: 48px; 
+    text-align: left; 
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .subtitulo-menu-rodape{
+    font-size: 29px; 
+    text-align: left;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .botao-enviar {
+    font-size: 29px; 
+    text-align: left;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .altura-formulario-texto  {
+    height: 200px;
+    
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .titulo-menu-rodape {
+    font-size: 48px; 
+    text-align: left; 
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .subtitulo-menu-rodape{
+    font-size: 29px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .botao-enviar {
+    font-size: 29px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 576px) {
+    .altura-formulario-texto  {
+    height: 200px;
+    
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .p-inicio2 {
+    font-size: 16px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .titulo-menu-rodape {
+    font-size: 20px; 
+    text-align: left; 
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .subtitulo-menu-rodape {
+    font-size: 16px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 768px) {
+    .botao-enviar {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    
+    @media (min-width: 768px) {
+    .altura-formulario-texto  {
+    height: 150px;
+    
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .p-inicio2 {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .titulo-menu-rodape {
+    font-size: 25px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .subtitulo-menu-rodape{
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .botao-enviar {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 992px) {
+    .altura-formulario-texto  {
+    height: 150px;
+    
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .p-inicio2 {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .titulo-menu-rodape {
+    font-size: 35px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .subtitulo-menu-rodape{
+    font-size: 24px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .botao-enviar {
+    font-size: 24px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    .altura-formulario-texto  {
+    height: 150px;
+    
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .p-inicio2 {
+    font-size: 18px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .subtitulo-menu-rodape {
+    font-size: 26px; 
+    text-align: left;
+    }
+    }
+    
+    
+    @media (min-width: 1400px) {
+    .botao-enviar {
+    font-size: 26px; 
+    text-align: left;
+    }
+    }
+    
+    
+    @media (min-width: 1400px) {
+    .titulo-menu-rodape {
+    font-size: 28px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .subtitulo-menu-rodape  {
+    font-size: 20px; 
+    text-align: left;
+    }
+    }
+    
+    @media (min-width: 1400px) {
+    .altura-formulario-texto  {
+    height: 150px;
+    
+    }
+    }
+        </style>
+    
+        <!--Bootstrap JS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+         <!--Java do Email-->
+       <!-- Pré-carregamento do EmailJS -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" as="script">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <!--Meu Java-->
+        <script src="outros.js" defer></script>
+    
+    </head>
+
+<body class="fundo-branco">
+
+    <!--Cabeçalho/Menu-->
+    <header>
+        <!-- Link para pular para o conteúdo principal -->
+        <a href="#conteudo-principal" class="skip-to-content" tabindex="0">Pular para o conteúdo principal</a>
+
+        <div class="container-fluid p-0 m-0 fundo-preto">
+            <div class="container-fluid m-0">
+                <div class="row m-0 p-0 justify-content-end">
+                    <button class="botao-acessibilidadetexto p-3 me-3 mb-3 col-1 w-auto botão-sombra-branca foco" aria-label="A+">A+</button>
+                    <button class="botao-acessibilidadetexto p-3 me-3 mb-3 col-1 w-auto botão-sombra-branca foco" aria-label="A-">A-</button>
+                    <button id="botao-contraste" class="botao-acessibilidadeconstraste p-3 mb-3 me-3 col-1 w-auto botão-sombra-branca" aria-label="Contraste">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half me-2 mb-1" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+                        </svg>Contraste
+                    </button>           
+                </div>
+            </div>
+
+            <nav class="container-fluid m-0 ps-5 pe-xxl-5 ps-xxl-5 pe-xl-4 ps-xl-4 pe-lg-3 ps-lg-3 pe-md-4 ps-md-4 pb-md-0 px-sm-3 pb-sm-3 px-3 pb-0 navbar navbar-expand-md borda-verde">
+
+                <div class="row m-0 p-0 align-items-center d-flex justify-content-sm-between justify-content-between">
+                    <a href="index.html" class="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-9 col-xxl-3 order-1 py-md-4 mb-0 mb-sm-0 mb-3 mt-0 d-md-flex p-lg-4 p-xxl-0 pe-xxl-0 mb-xxl-4 justify-content-md-between order-xxl-1">
+                        <img class="img-fluid" src="/Imagens/logomenu.webp" alt="Página Inicial" width="400px" height="100px" >
+                    </a>
+
+                    <!-- Botão do menu hamburguer -->
+                    <button class="navbar-toggler order-3 order-sm-3 col-2 col-sm-2 justify-content-end justify-content-sm-end" type="button" data-bs-toggle="collapse" data-bs-target="#menuhamburguer" aria-controls="menuhamburguer" aria-expanded="false" aria-label="Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" color="white" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+
+                    <!-- Menu -->
+                    <!--Telas Pequenas-->
+                    <div class="collapse navbar-collapse navbar-nav p-0 m-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-7 order-3 justify-content-center align-self-end order-sm-4 order-4 order-xxl-2" id="menuhamburguer">
+                        <div class="d-md-none d-flex flex-wrap justify-content-center mt-5 mb-3 mx-3 justify-content-between fonte-mono"> <!-- Menu tela pequenas -->
+                            <a href="/usabilidade.html" class="p-sm-2 px-sm-4 p-2 px-4 m-0 my-sm-3 ms-sm-3 col-sm-5 my-3 ms-3 col-5 text-center usabilidade-cheia">Usabilidade</a>
+                            <a href="/acessibilidade.html" class="p-sm-2 px-sm-4 p-2 px-4 m-0 my-sm-3 me-sm-3 col-sm-5 my-3 me-3 col-5 text-center acessibilidade-cheia">Acessibilidade</a>
+                            <a href="/ferramentas.html" class="p-sm-2 px-sm-4 p-2 px-4 m-0 my-sm-3 ms-sm-3 col-sm-5 my-3 ms-3 col-5 text-center ferramentas-cheia">Ferramentas</a>
+                            <a href="/sobre.html" class="p-sm-2 px-sm-4 p-2 px-4 m-0 my-sm-3 me-sm-3 col-sm-5 my-3 me-3 col-5 text-center sobre-cheia">Sobre</a>
+                        </div>
+
+                        <!-- Tela Média e Grande -->
+                        <div class="d-none d-md-flex fonte-mono ms-3">
+                            <a href="/usabilidade.html" class="p-2 px-3 me-0 m-0 usabilidade usabilidade-ativa">Usabilidade</a>
+                            <a href="/acessibilidade.html" class="p-2 px-3 me-0 m-0 acessibilidade ">Acessibilidade</a>
+                            <a href="/ferramentas.html" class="p-2 px-3 me-0 m-0 ferramentas">Ferramentas</a>
+                            <a href="/sobre.html" class="p-2 px-3 me-0 m-0 sobre">Sobre</a>
+                        </div>
+                    </div>
+
+                    <!-- Barra de pesquisa -->
+                    <form class="col-2 col-sm-2 col-md-3 col-lg-3 col-xl-3 col-xxl-2 order-md-2 order-lg-3 p-0 m-0 pb-md-3 order-2 mx-auto my-4 my-sm-4 order-xxl-3 ps-xxl-2" role="search">
+                        <div class="input-group d-flex justify-content-center mx-2 justify-content-sm-center mx-sm-2">
+                            <input type="search" class="form-control border-2 d-none d-md-flex search-bar barra-de-pesquisa" placeholder="" aria-label="Barra de Pesquisa">
+                            <button type="submit" class="btn" aria-label="Pesquisar" tabindex="-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" color="white" fill="currentColor" class="bi bi-search text-pesquisaicone" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </nav>
+            <div class="usabilidade-linha d-none d-md-flex col-12"></div>
+
+    </header>
+
+    <!--Conteúdo da Página-->
+    <main class="container-fluid m-0 p-0 fundo-branco conteudo">
+        <!--Capa-->
+        <div class="container-fluid" id="conteudo-principal">
+            <div class="row mb-5">
+
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="fundo-verde-claro col-12 ps-5 pt-5 pb-3 pe-0">
+                    <ol class="breadcrumb texto-verde">
+                    <li class="breadcrumb-item"><a class="texto-verde" href="/usabilidade.html">Usabilidade</a></li>
+                    <li class="breadcrumb-item active texto-preto" aria-current="page">Casos de Sucesso e Falhas de Usabilidade</li>
+                    </ol>
+                </nav>
+
+                <div class="fundo-verde-claro m-0 p-0 text-center">
+                    <img class="col-10 col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 justify-content-center img-fluid" width="300px" height="85px" aria-hidden="true" src="/Imagens/Capa Artigo Carol - Teoria.webp">
+                </div>
+        </div>
+
+        <!--Texto do Artigo-->
+        <div class="p-2 m-2 p-xxl-5 pt-xxl-4 m-xxl-5 pt-xl-2 p-xl-5 m-xl-5 pt-lg-3 p-lg-4 m-lg-4 pt-md-2 p-md-3 m-md-3 p-sm-2 m-sm-2">
+            <div class="px-0 mx-0 px-xxl-5 mx-xxl-5 px-xl-0 mx-xl-0 px-lg-0 mx-lg-0 px-md-0 mx-md-0 px-sm-0 mx-sm-0">
+
+
+                <!--Título-->
+                <div class="mb-5 mx-3 px-4 py-0 pt-0 px-sm-4 py-sm-0 pt-sm-0 px-md-5 py-md-0 pt-md-0 px-lg-5 py-lg-0 pt-lg-0 p-xl-5 py-xl-0 pt-xl-0 px-xxl-5 py-xxl-0 pt-xxl-0">
+                    <h2 class="texto-verde titulo-artigo foco" tabindex="0">Casos de Sucesso e Falhas de Usabilidade</h2>
+                </div>
+        
+                <!-- Artigo -->
+                <div class="container-fluid m-0 p-0">
+                    <div class="row mb-5 mx-3 px-4 px-xxl-5 px-xl-5 px-lg-5 px-sm-4">
+                        
+                        <div class="d-flex align-items-center w-100 ps-lg-0 ps-md-4 ps-sm-0 ps-0">
+                        
+                            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 ms-0 ms-xxl-0 ms-xl-0 ms-lg-0 ms-md-0 ms-sm-0">
+                                <img class="img-fluid text-center w-75" id=imagem-autora aria-hidden="true" src="/Imagens/Responsável.webp" width="20px" height="20px" >
+                            </div>
+        
+                            
+                            <div class="col-xxl-8 col-xl-3 col-lg-5 col-md-4 col-sm-5 col-5 d-flex flex-column">
+                                <a class="texto-autora-artigo texto-verde" href="/sobre.html#responsavel">Paula Oliveira</a>
+                                <p class= "m-0 texto-detalhe-artigo texto-preto">09 de Dezembro de 2024</p>
+                            </div>
+        
+                            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 ms-auto me-xxl-4 me-xl-4 me-lg-0 me-md-0 me-sm-0 me-0 d-flex flex-column align-items-end">
+                                <p class="m-0 texto-autora-artigo text-end texto-preto">Tempo de leitura:</p>
+                                <p class="m-0 texto-detalhe-artigo texto-preto">13 min</p>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+        
+                <!--Resumo do Artigo-->
+                <div class="container-fluid">
+                    <div class="row mb-5 mx-4 mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-5 mx-sm-4">
+                        <div class="d-flex align-items-center">
+
+                            <div class="col-1 vr fundo-verde resumo-linha h-100"></div>
+
+                            <p class="ms-3 mb-0 resumo-texto texto-preto">
+                                <span class="texto-verde texto-destaque-artigo">Resumo:</span> 
+                                Neste artigo mostraremos alguns erros encontrados pela pesquisa da Baymard em sites de e-commerce, sites com versões para computador e dispositivos móveis, para que você identifique quais erros também estão presentes em seu site e como corrigi-los.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neste Artigo -->
+                <div class="container-fluid">
+                    <div class="row mb-0 mb-xxl-5 mb-xl-5 mb-lg-5 mb-md-0 mb-sm-0 mx-3 px-4 px-xxl-5 px-xl-5 px-lg-5 px-sm-4">
+
+                        <!-- Titulo Neste Artigo -->
+                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-6 col-7">
+                            <h2 class="texto-branco fundo-verde neste-artigo-titulo p-2">Neste Artigo</h2>
+                        </div>
+
+                        <!-- Tópicos Neste Artigo-->
+                        <div>
+                            <ul class="list-unstyled mx-sm-auto mx-md-auto mx-lg-0 mx-xl-0 mx-xxl-0">
+
+                                <li>
+                                    <a href="#primeiro-topico" class="topico-paginas-artigos texto-preto d-flex align-items-start mt-5 mt-lg-4 mt-md-5 mt-sm-5 pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill texto-verde m-0 me-2 me-sm-2 me-md-3 align-self-start triangulo-topico" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                        </svg>
+                                        Sites para Computador
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#segundo-topico" class="topico-paginas-artigos texto-preto d-flex align-items-start pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill texto-verde m-0 me-2 me-sm-2 me-md-3 align-self-start triangulo-topico" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                        </svg>
+                                        Sites para dispositivos móveis
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#terceiro-topico" class="topico-paginas-artigos texto-preto d-flex align-items-start pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill texto-verde m-0 me-2 me-sm-2 me-md-3 align-self-start triangulo-topico" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                        </svg>
+                                        Conclusão
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Primeiro Tópico -->
+                <div class="container-fluid">
+                    <div class="row mx-3 px-4">
+
+                        <ul class="list-unstyled mx-sm-auto mx-md-auto mx-lg-0 mx-xl-0 mx-xxl-0">
+
+                            <!--01 Tópico-->
+                            <li class="texto-preto mt-5 mt-lg-4 mt-md-5 mt-sm-5 pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3">
+                                
+                                <div class="d-flex align-items-start mb-5">
+
+                                    <!-- Ícone SVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-1-circle-fill texto-verde m-0 me-3 me-sm-3 me-md-3 align-self-start numero-topico" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z"/>
+                                    </svg>
+                    
+                                    <!-- Título -->
+                                    <h3 class="mb-0 texto-verde subtitulo-artigo foco" id="primeiro-topico" tabindex="0">Sites para Computador</h3>
+
+                                </div>
+
+                                <!-- Parágrafo abaixo -->
+                                <p class="mt-2 p-artigo mb-5 mt-5">
+                                    Neste artigo apresentaremos os 10 erros mais comuns de usabilidade encontrados em sites de e-commerce. Esses erros foram identificados através da pesquisa realizada pela empresa <a class="texto-verde" href="https://baymard.com/research" target="_blank">Baymard</a> em que analisou 251 sites de comércio. Apesar de se direcionar para o comércio, grande parte pode ser aplicada em sites de outros nichos:                    
+                                </p>
+
+                                <p class="p-artigo ms-5 marcador-verde" type="a">
+                                    <p class="p-artigo marcador-verde"> a) Categorias Específicas para vendas:<span class="texto-preto p-artigo"> quando o usuário entra no site ele busca por categorias e banners para encontrar produtos em promoção; por isso, é importante ter uma categoria específica no menu para promoção, seja como categoria principal “Promoção” ou subcategoria “Casacos > Casacos em Promoção”;
+                                    </span>
+                                    </p><br>
+
+                                    <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                        <img src="/Imagens/Categorias Específicas para vendas.webp" alt="Categoria de oferta no site" class="img-fluid" width="900px" height="300px" loading="lazy">
+                                        <figcaption class="mt-2 legenda-artigo"> No site do Mercado Livre possui uma categoria apenas para ofertas (Fonte: Mercado Livre)</figcaption>
+                                    </figure>
+
+                                    <p class="p-artigo marcador-verde"> b) Use uma linguagem objetiva nos links:<span class="texto-preto p-artigo"> como dito anteriormente, os usuários buscam por promoções quando entram no site. No caso dos banners, é importante que o rótulo dos links não sejam muito gerais para não causar dúvidas. Por exemplo, se no banner está escrito “Black Friday” e possui um botão escrito “mouses gamers” o usuário pode ignorar o título e entender que é um link para todos os “mouses gamers”, em vez disso, utilize “mouses gamers em promoção”;
+                                    </span>
+                                    </p><br>
+
+                                    <p class="p-artigo marcador-verde"> c) Evite desconfiança:<span class="texto-preto p-artigo">  em sites de vendas, é importante deixar os descontos e formas de pagamento explicitas para não gerar desconfiança por parte do usuário, por isso posicione o desconto ao lado do preço do produto, por exemplo: "<s>R$ 49,90</s> por R$ 24,95" ou  "<s>R$ 49,90</s> por R$ 24,95 (50% de desconto)";
+                                    </span>
+                                    </p><br>
+
+                                    <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                        <img src="/Imagens/Evite desconfiança.webp" alt="Roupas com preço antigo e novo para" class="img-fluid" width="900px" height="300px" loading="lazy">
+                                        <figcaption class="mt-2 legenda-artigo"> Na Dafiti o valor antigo é riscado para mostrar o desconto (Fonte: Dafiti)</figcaption>
+                                    </figure>
+
+
+                                    <p class="p-artigo marcador-verde"> d) Descontos automáticos:<span class="texto-preto p-artigo"> em vez de fornecer um código para o cliente, que podem ser escritos errados ou através de pop-ups que o usuário ignora forneça o cupom automaticamente no momento da compra, por exemplo, fornecer opções de cupons como “frete grátis” ou “acima de 200 reais em compras ganhe 10% de desconto”, o usuário sente mais confiante em comprar, por enxergar a empresa como honesta ao não tentar enganá-lo para pagar o preço cheio. Além disso, facilita e agiliza o processo para compra;
+                                    </span>
+                                    </p><br>
+
+                                    <p class="p-artigo marcador-verde"> e) Frete Grátis:<span class="texto-preto p-artigo"> perto da seção de compra em que se encontra o preço do produto, os descontos e formas de pagamento, insira também o frete, principalmente se for frete grátis, por ser um dos fatores que o cliente considera se irá comprar o produto ou não;
+                                    </span>
+                                    </p><br>
+
+                                    <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                        <img src="/Imagens/Frete Grátis.webp" alt="Termo Frete grátis acima do preço do produto" class="img-fluid" width="500px" height="300px" loading="lazy">
+                                        <figcaption class="mt-2 legenda-artigo"> Na seção em que está o preço do produto é avisado sobre frete grátis (Fonte: Amazon)</figcaption>
+                                    </figure>
+
+                                    <p class="p-artigo marcador-verde"> f) Políticas de envio e devolução no rodapé:<span class="texto-preto p-artigo"> antes do momento da compra, alguns clientes procuram por informações sobre como a empresa envia o produto, como funciona o processo de devolução para decidir se irá fazer suas compras no site. O usuário espera que essas informações estejam no rodapé. Alguns participantes da pesquisa ficaram confusos com sites que continham ambas as categorias “Políticas de Devolução” e “Devolução”, procure manter na mesma página;
+                                    </span>
+                                    </p>
+
+                                    <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                        <img src="/Imagens/Políticas de envio.webp" alt="Rodapé do site com informações sobre entrega e troca de produto" class="img-fluid" width="300px" height="300px" loading="lazy">
+                                        <figcaption class="mt-2 legenda-artigo"> No rodapé do site da Kalunga eles fornecem links para o usuário ter acesso a informações de envio (Fonte: Kalunga)</figcaption>
+                                    </figure>
+
+                                    <p class="p-artigo marcador-verde"> g) Avaliação de Produto com foto:<span class="texto-preto p-artigo"> os usuários gostam de ver antes da compra a seção de comentários de outras pessoas que compraram o produto, principalmente quando há fotos e vídeos. Pois as fotos fornecidas pelo site da empresa são geralmente tratadas e editadas, enquanto as fotos dos próprios usuários são mais objetivas e reais. Além disso, os comentários positivos e negativos ajudam a decidir a compra. Por isso, forneça essa função em site e incentive os usuários que compraram o produto que avalie, envie fotos e vídeos; 
+                                    </span>
+                                    </p>
+
+                                    <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                        <img src="/Imagens/Avaliação de Produto com foto.webp" alt="comentário de cliente no site" class="img-fluid" width="900px" height="300px" loading="lazy">
+                                        <figcaption class="mt-2 legenda-artigo"> A Shopee possui uma seção de comentários para os clientes avaliarem o produto, enviar fotos e videos (Fonte: Shopee)</figcaption>
+                                    </figure>
+
+                                    <p class="p-artigo marcador-verde"> h) Imagens de mídias sociais:<span class="texto-preto p-artigo"> assim como citado anteriormente, o usuário prefere ver o produto nas fotos de forma mais real, por isso utilize em suas imagens fotos de redes sociais, como o “Instagram”, em que o produto aparece. Os usuários gostam desse estilo de foto, por ajudar a inspirar ou validar uma expectativa em relação ao estilo de design que eles esperam que o objeto transmita; 
+                                    </span>
+                                    </p><br>
+
+                                    <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                        <img src="/Imagens/Imagens de mídias sociais.webp" alt="Site mostra o varal dentro de uma casa" class="img-fluid" width="900px" height="300px" loading="lazy">
+                                        <figcaption class="mt-2 legenda-artigo"> No site da Mor a empresa colocou imagens dos produto dentro de uma casa para mostrar o seu uso no dia a dia (Fonte: Mor)</figcaption>
+                                    </figure>
+
+                                    <p class="p-artigo marcador-verde"> i) Checkout de convidado:<span class="texto-preto p-artigo"> é uma opção que permite que o usuário não precise criar uma conta para realizar uma compra, sendo necessário apenas fornecer informações básicas para a entrega. Essa alternativa agiliza o processo de compra e facilita a vida do usuário, que não irá precisar criar uma conta sempre que quiser fazer uma compra em um site novo. A recomendação é que você deixe essa opção mais chamativa em vez da seção de criar conta, para o usuário ver primeiro e realizar a compra com mais facilidade; 
+                                    </span>
+                                    </p><br>
+
+                                    <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                        <img src="/Imagens/Checkout de convidado.webp" alt="site com opção de entrar como convidado para você criar a conta depois" class="img-fluid" width="900px" height="300px" loading="lazy">
+                                        <figcaption class="mt-2 legenda-artigo"> Quando o usuário tenta finalizar o pedido a Apple solicita login ou continuar como convidado (Fonte: Apple)</figcaption>
+                                    </figure>
+
+                                    <p class="p-artigo marcador-verde"> j) Opções de Pagamento:<span class="texto-preto p-artigo"> forneça uma ou duas opções alternativas de forma de pagamento além da convencional (cartão de crédito/débito e boleto), pois caso a forma de pagamento falhar, o usuário pode ter outras alternativas, por exemplo, o “PayPal” e “Mercado Pago”;
+                                        
+                                    </span>
+                                    </p><br>
+
+                                </p>
+
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+                <!-- Segundo Tópico -->
+                <div class="container-fluid">
+                    <div class="row mx-3 px-4">
+
+                        <ul class="list-unstyled mx-sm-auto mx-md-auto mx-lg-0 mx-xl-0 mx-xxl-0">
+
+                            <!--02 Tópico-->
+                            <li class="texto-preto mt-5 mt-lg-4 mt-md-5 mt-sm-5 pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3">
+                                
+                                <div class="d-flex align-items-start mb-5">
+
+                                    <!-- Ícone SVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-2-circle-fill texto-verde m-0 me-3 me-sm-3 me-md-3 align-self-start numero-topico" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+                                    </svg>
+
+                                    <!-- Título -->
+                                    <h3 class="mb-0 texto-verde subtitulo-artigo foco" id="segundo-topico" tabindex="0">Sites para dispositivos móveis </h3>
+
+                                </div>
+
+                                <!-- Parágrafo abaixo -->
+                                <p class="mt-2 p-artigo mb-5 mt-5">
+
+                                    <p class="mt-2 p-artigo mb-5 mt-5">
+                                        Dependendo da faixa etária do usuário, ele pode preferir realizar compras pelo computador (<a class="texto-verde" href="https://www.nngroup.com/reports/designing-for-young-adults/" target="_blank">Geração Millennial </a> e acima) ou pelo celular (Geração Z), por isso, com base na pesquisa realizada pela <a class="texto-verde" href="https://baymard.com/blog/mobile-ux-ecommerce" target="_blank">Baymard</a> 
+                                        com 138 sites mobiles, listamos alguns pontos importantes para melhorar a usabilidade:
+                                    </p>
+
+                                    <p class="p-artigo ms-5 marcador-verde" type="a">
+                                        <p class="p-artigo marcador-verde"> a) Destacar a categoria de menu selecionada:<span class="texto-preto p-artigo"> nos dispositivos móveis, cerca de 97% dos sites não sinalizam para o usuário a categoria selecionada do menu, dificultando a navegação do usuário que no computador utiliza o menu para se localizar no site, mas como na versão mobile é utilizado o menu hambúrguer, que esconde as informações do menu, essa noção de localização se perde. E quando o usuário tentava se localizar pela breadcrumbs, elas não estavam aplicadas consistentemente no site. Por isso, além das breadcrumbs aplicadas corretamente, é preciso que, quando o usuário selecione a categoria do menu, a interface comunique visualmente;
+                                        </span>
+                                        </p><br>
+
+                                        <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                            <img src="/Imagens/Destacar a categoria de menu selecionada.webp" alt="Site na versão para celular a categoria não é sinalizada quando selecionada" class="img-fluid" width="400px" height="300px" loading="lazy">
+                                            <figcaption class="mt-2 legenda-artigo"> No Itaú a categoria selecionada está escondida no menu hambúrguer (Fonte: Itaú)</figcaption>
+                                        </figure>
+    
+                                        <p class="p-artigo marcador-verde"> b) Sugestões de Pesquisa:<span class="texto-preto p-artigo"> para navegar, o usuário utiliza a pesquisa como uma alternativa quando ele não consegue encontrar pelo menu. No entanto, cerca de 79% dos sites não possuíam o recurso de gerar sugestões automáticas para o usuário conforme ele digita na barra de pesquisa. Essa função agiliza o processo quando o usuário não sabe escrever a palavra corretamente ou não sabe exatamente o nome do produto;
+                                        </span>
+                                        </p><br>
+
+                                        <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                            <img src="/Imagens/Sugestões de Pesquisa.webp" alt="o site usa a barra de pesquisa fornecida pela Google" class="img-fluid" width="400px" height="300px" loading="lazy">
+                                            <figcaption class="mt-2 legenda-artigo"> A pesquisa do site da UEL fornece uma lista de opções quando o usuário digita (Fonte: UEL)</figcaption>
+                                        </figure>
+    
+                                        <p class="p-artigo marcador-verde"> c) Consultas e caminhos alternativos:<span class="texto-preto p-artigo">  como citado anteriormente o usuário pode não saber o nome do produto; por isso, é você deve fornecer em seu site alternativas relacionadas, além de mostrar o termos, o resultado da pesquisa deve mostrar “produtos relacionados”, principalmente para os casos em que a pesquisa não retornaria nenhum resultado;
+                                        </span>
+                                        </p><br>
+    
+                                        <p class="p-artigo marcador-verde"> d) Especifique os filtros:<span class="texto-preto p-artigo"> para filtrar sua pesquisa e encontrar os produtos que deseja, são utilizados os filtros, mas segundo a pesquisa, cerca de 77% dos sites não explicam os termos utilizados nos filtros, dificultando para o usuário utilizar o recurso. Por exemplo, uma peça de roupa que possui filtro por tipos de tecidos de lã, um usuário comum não saberia a diferença e não conseguiria utilizar o filtro corretamente, levando mais tempo para encontrar o produto. Neste caso, utilize termos menos técnicos, se não for possível, explique-os no próprio filtro, por exemplo, em vez de utilizar apenas “Lã virgem” escreva “Lã virgem: melhor qualidade, mais macia, elástica e hipoalergênica”;
+                                        </span>
+                                        </p><br>
+
+                                        <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                            <img src="/Imagens/Especifique os filtros.webp" alt="Filtros de material do tecido como mesh e poliamida" class="img-fluid" width="500px" height="300px" loading="lazy">
+                                            <figcaption class="mt-2 legenda-artigo"> Na Nesthoes a categoria de materiais não específica para o usuário sobre o tecido (Fonte: Netshoes)</figcaption>
+                                        </figure>
+
+                                        <p class="p-artigo marcador-verde"> e) Especifique os erros:<span class="texto-preto p-artigo"> quando ocorre um erro no momento de preencher um campo de formulário, especifique para o usuário o erro. Por exemplo, o usuário escreveu o número de telefone incorretamente, em vez de informar com erro “Esse número de telefone não exite” opte por “O número não possuí dígitos suficientes”, facilitando para o usuário corrigir o erro rapidamente. Na pesquisa, cerca de 98% dos sites não tinham mensagens de erro adaptáveis. Por isso, faça teste para identificar os principais erros e especifique pelo menos entre 4 a 7 mensagens de erro por campo;
+                                        </span>
+                                        </p><br>
+
+                                        <p class="p-artigo marcador-verde"> f) Indique o carregamento da página:<span class="texto-preto p-artigo"> cerca de 81% dos sites não geram um feedback visual de que a página está carregando as informações. Este detalhe pode gerar aborrecimento ao usuário que utiliza o site, pois ele não sabe se a ação dele foi identificada pela página. Por isso, forneça indicadores de carregamento, eles devem aparecer no momento que o usuário realiza a ação. Pode ser utilizado o spinner, as setas circulares ou simplesmente o texto “carregando”. Além disso, o indicador de carga deve atualizar após 10 segundos para o usuário compreender que a ação continua sendo realizada;
+                                        </span>
+                                        </p><br>
+
+                                        <figure class="text-center px-5 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+                                            <img src="/Imagens/Indique o carregamento da página.webp" alt="circulo colorido girando para indicar que a página está carregando" class="img-fluid" width="300px" height="300px" loading="lazy">
+                                            <figcaption class="mt-2 legenda-artigo"> Na Magazine Luiza quando uma página é carregada um spinner girando aparece (Fonte: Magazine Luiza)</figcaption>
+                                        </figure>
+
+                                        <p class="p-artigo marcador-verde"> g) Espaço entre elementos tocáveis:<span class="texto-preto p-artigo"> dos sites analisados, 74% não possuíam espaço suficiente entre os elementos para o usuário clicar, levando-o a clicar onde não deseja. Sendo assim, é recomendado que os elementos tenham no mínimo um espaçamento de 2 mm e evite inserir eles próximos às bordas, pois geralmente essa área do dispositivo não responde. Apesar da recomendação do tamanho mínimo, também é indicado que você faça testes, para identificar casos em que será necessário utilizar um tamanho de espaçamento maior;
+                                        </span>
+                                        </p><br>
+
+                                        <p class="p-artigo marcador-verde"> h) Tamanho mínimo para elementos tocáveis:<span class="texto-preto p-artigo"> além do espaçamento, os sites possuíam problemas em relação ao tamanho dos elementos serem pequenos para tocar, em torno de 86% não atendiam esse requisito. O ideal é que os elementos tocáveis tenham no mínimo 7 mm x 7 mm (tamanho em relação à tela do dispositivo);
+                                        </span>
+                                        </p><br>
+
+                                        
+                                        <p class="p-artigo marcador-verde"> i) Teclado correto conforme formulário:<span class="texto-preto p-artigo"> quando o usuário preenche o campo de um formulário, o ideal é que o teclado se adapte à informação que será preenchida. Por exemplo, um campo para digitar o telefone, o teclado muda para uma versão que aparece apenas o teclado numérico. Neste caso, basta inserir os atributos “type” e “pattern”:  <code class="grifado-verde texto-branco">&lt;input type="text" inputmode="decimal" pattern="[0-9]*" novalidate autocorrect="off"/></code>. Os teclados alternativos são melhores porque são sucintos e possuem tamanho de teclas maior, evitando o toque acidental. Cerca de 67% dos sites não tinham a troca de teclado;
+                                        </span>
+                                        </p><br>
+
+                                        <p class="p-artigo marcador-verde"> j) Correção automática:<span class="texto-preto p-artigo"> ainda sobre o teclado, existe a função de autocorreção de palavras para corrigir erros de escrita, um recurso que pode ajudar para pesquisar um produto pela palavra correta, mas que pode prejudicar em campos de formulário. Em torno de 85% dos sites, essa função não está desabilitada, uma função que por muito tempo prejudicou a usabilidade com envio de dados incorretos. Por isso, desative esse recurso em campos de formulário, como e-mail, endereço, telefone, etc. Para desabilitar o campo basta deixar o atributo “autocorrect” como “off”, veja o exemplo: <code class="grifado-verde texto-branco">&lt;input type="text" autocorrect="off" /></code>.
+                                        </span>
+                                        </p><br>
+    
+                                        
+                                        
+
+                                   
+                                </p>
+
+                                
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+                <!-- Conclusão -->
+                <div class="container-fluid">
+                    <div class="row mx-3 px-4">
+
+                        <ul class="list-unstyled mx-sm-auto mx-md-auto mx-lg-0 mx-xl-0 mx-xxl-0">
+
+                            <!--05 Tópico-->
+                            <li class="texto-preto mt-5 mt-lg-4 mt-md-5 mt-sm-5 pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3">
+                                
+                                <div class="d-flex align-items-start mb-5">
+
+                                    <!-- Título -->
+                                    <h3 class="mb-0 texto-verde subtitulo-artigo foco" id="terceiro-topico" tabindex="0">Conclusão</h3>
+
+                                </div>
+
+                                <!-- Parágrafo abaixo -->
+                                <p class="mt-2 p-artigo mb-5 mt-5">
+                                    Para melhorar a usabilidade do site, é preciso prever os erros que os usuários possam cometer. Deixando claro para onde os links direcionam, quais erros o usuário precisa corrigir e como corrigi-los, auxilie o usuário a não cometer erros e seja transparente com o usuário sobre promoções, devoluções, condições de pagamento. Apesar de ao longo do artigo a pesquisa ter mostrado diferentes erros de usabilidade encontrados nos sites, em geral, todos se tratam de erros de comunicação entre cliente e empresa, ou seja, verifique se o seu site está comunicando corretamente com o seu usuário.
+                                </p>
+
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+                <!-- Referências -->
+                <div class="container-fluid">
+                    <div class="row mx-3 px-4">
+
+                        <ul class="list-unstyled mx-sm-auto mx-md-auto mx-lg-0 mx-xl-0 mx-xxl-0">
+
+                            <!--05 Tópico-->
+                            <li class="texto-preto mt-5 mt-lg-4 mt-md-5 mt-sm-5 pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3">
+                                
+                                <div class="d-flex align-items-start mb-5">
+
+                                    <!-- Título -->
+                                    <h3 class="mb-0 texto-verde subtitulo-artigo foco" tabindex="0">Referências</h3>
+
+                                </div>
+
+                                <!-- Tópicos Neste Artigo-->
+                            <div>
+                                <ul class="list-unstyled mx-sm-auto mx-md-auto mx-lg-0 mx-xl-0 mx-xxl-0">
+
+                                    <li>
+                                        <a class="referencias-artigos texto-verde d-flex align-items-start mt-5 mt-lg-4 mt-md-5 mt-sm-5 pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3" href="https://baymard.com/blog/10-sales-ux-best-practices" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill texto-verde m-0 me-2 me-sm-2 me-md-3 align-self-start triangulo-topico" viewBox="0 0 16 16">
+                                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                            </svg>
+                                            10 Melhores Práticas de UX para Vendas e Promoções de E-Commerce
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="referencias-artigos texto-verde d-flex align-items-start pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3" href="https://baymard.com/blog/mobile-ux-ecommerce" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill texto-verde m-0 me-2 me-sm-2 me-md-3 align-self-start triangulo-topico" viewBox="0 0 16 16">
+                                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                            </svg>
+                                            Tendências de UX para dispositivos móveis
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="referencias-artigos texto-verde d-flex align-items-start pb-xxl-2 pb-xl-2 pb-lg-3 pb-md-3 pb-sm-3 pb-3" href="https://www.nngroup.com/reports/designing-for-young-adults/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right-fill texto-verde m-0 me-2 me-sm-2 me-md-3 align-self-start triangulo-topico" viewBox="0 0 16 16">
+                                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                            </svg>
+                                            Projetando para jovens adultos (Relatório)
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+
+                <!--Botões de Navegação Entre Artigos-->
+                <div class="container-fluid mt-5 pt-5 mb-5 px-5">
+                    <div class="row px-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a  href="Testes com usuários reais.html" class="text-decoration-none botao-enviar texto-branco fundo-verde botão-sombra-branca p-3 p-xxl-3 p-xl-3 p-lg-3 p-md-3 p-sm-3 ms-2" type="submit" id="button2">Anterior</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <a href="Tendências atuais em UX e UI 2024.html" class="text-decoration-none botao-enviar texto-branco fundo-verde botão-sombra-branca p-3 p-xxl-3 p-xl-3 p-lg-3 p-md-3 p-sm-3 ms-2" type="submit" id="button3">Próximo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+            </div><!--Termina Texto do Artigo espaço1-->
+            
+
+        </div><!--Termina Texto do Artigo espaço2-->
+        
+
+    </main>
+
+        <!--Rodapé-->
+   <footer>
+
+    <div class="container-fluid m-0 p-0">
+        <div class=" row g-0 fundo-preto rodape justify-content-xxl-around justify-content-xl-around justify-content-lg-between justify-content-md-between justify-content-sm-center justify-content-center p-5">
+
+            <!--Explicação sobre o site-->
+            <div class="col-12 col-xxl-3 col-xl-4 col-lg-5 col-md-4 col-sm-12 justify-content-center">
+                <a href="/index.html">
+                    <img class="img-fluid" alt="Página Inicial" src="/Imagens/Logo Horizontal Branca.webp" width="501px" height="128px" loading="lazy">
+                </a>
+                <p class="texto-branco pt-3 p-inicio2">
+                    O Usa na Web é um guia de usabilidade e acessibilidade aplicado em sites. Seja para profissionais que precisam de um material para consulta ou iniciantes que desejam conhecer as áreas.
+                </p>
+            </div>
+
+            <!--Menu Rodapé-->
+            <div class="col-12 col-xxl-2 col-xl-3 col-lg-2 col-md-2 col-sm-12 ps-3 pt-4 pb-4 ps-xxl-5 pt-xxl-0 pb-xxl-0 ps-xl-5 pt-xl-0 pb-xl-0 ps-lg-0 pt-lg-0 pb-lg-0 ps-md-0 pt-md-0 pb-md-0 ps-sm-3 pt-sm-5 pb-sm-5">
+                <h2 class="texto-branco titulo-menu-rodape pb-2">Conteúdo</h2>
+                <ul class="list-unstyled">
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="/usabilidade.html">Usabilidade</a></li>
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="/acessibilidade.html">Acessibilidade</a></li>
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="/ferramentas.html">Ferramentas</a></li>
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="/sobre.html">Sobre</a></li>
+                    <li class="pb-2"><a class="subtitulo-menu-rodape texto-branco" href="/sobre.html#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <!--Formulário Feedback-->
+            <form class="col-12 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12" id="form" >
+
+                <div class="mb-0" >
+                    <h3 class="form-label texto-branco titulo-menu-rodape text-decoration-none pb-3">Deixe seu comentário sobre o guia!</h3>
+                    <label class="texto-branco text-decoration-none pb-1" for="email">E-mail</label>
+                    <input class="form-control" placeholder="email@exemplo.com" type="text" name="email" id="email">
+
+                </div>
+
+                <div class="mb-5 mb-xxl-5 mb-xl-5 mb-lg-5 mb-md-4 mb-sm-5">
+                    <label class="form-label texto-branco text-decoration-none pt-3" for="mensagem">Mensagem</label>
+                    <textarea class="form-control resize altura-formulario-texto" placeholder="Digite sua mensagem" name="mensagem" id="mensagem"></textarea>
+                </div>
+                <div class="text-end">
+                    <input class="botao-enviar texto-preto fundo-branco botão-sombra-branca p-2 p-xxl-2 p-xl-2 p-lg-2 p-md-2 p-sm-2 "  type="submit" id="button" value="Enviar">
+                </div>
+
+              </form>
+        </div>
+    </div>
+
+    <!--Creditos a Desenvolvolvedora-->
+    <div class="container-fluid m-0 p-0">
+         <div class=" row g-0 fundo-cinza-medio ">
+            <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <p class="m-0 p-3 text-center texto-branco subtitulo-menu-rodape text-decoration-none">
+                    Desenvolvido por <a class="subtitulo-menu-rodape text-decoration-underline texto-branco" href="#">Paula Oliveira</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!--Widget Libras-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<!-- Meus Arquivos Java -->
+<script src="email.js" defer></script>
+
+
+</body>
+</html>
+
+
