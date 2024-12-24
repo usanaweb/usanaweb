@@ -11,5 +11,6 @@ Este projeto foi o resultado do meu TCC "GUIA PRÁTICO DE Acessibilidade e Usab
 e-mail: usabilidadenaweb@outlook.com
 
 # Direitos Reservados
-Este projeto é para uso pessoal. Nenhuma permissão é concedida para copiar, modificar, distribuir ou usar este código para qualquer finalidade.
+Este projeto é apenas para fins de visualização. Não é permitida a cópia, modificação ou redistribuição deste código.
+
 
