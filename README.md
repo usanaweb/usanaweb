@@ -9,3 +9,8 @@ Este projeto foi o resultado do meu TCC "GUIA PRÁTICO DE Acessibilidade e Usab
 ## Contato
 
 e-mail: usabilidadenaweb@outlook.com
+
+# Direitos Reservados
+Este projeto é apenas para fins de visualização. Não é permitida a cópia, modificação ou redistribuição deste código.
+
+
