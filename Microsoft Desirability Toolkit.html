@@ -25,608 +25,608 @@
 
         
         <!--Estilo Padrão de Todas as Páginas-->
-        <style>
-            /*Padrão*/
+    <style>
+        /*Padrão*/
 
-    .conteudo a:visited {
-    color: purple; /* Cor para links visitados */
-    }
-
-    main a.botao-enviar:visited {
-    color: #ffffff; /* Mantém a cor padrão dos botões */
+.conteudo a:visited {
+color: purple; /* Cor para links visitados */
 }
 
-    .fonte-mono{
-    font-family: "Reddit Mono", serif !important;
-    }
-    
-    .fonte-sans{
-    font-family: "Reddit Sans", serif !important;
-    }
-    
-    
-    .texto-vermelho{
-    color: #9F2B2F;
-    }
-    
-    .texto-azul{
-    color: #2F5499;
-    }
+main a.botao-enviar:visited {
+color: #ffffff; /* Mantém a cor padrão dos botões */
+}
 
-    .texto-verde{
-    color: #475E18;
-    
-    }
-    
-    .texto-cinza{
-    color: #595959;
-    }
-    
-    .texto-branco{
-    color: #ffffff;
-    }
-    
-    .texto-preto{
-    color: #0D0D0D !important;
-    }
-    
-    .sem-fundo{
-    background-color: transparent;
-    }
-    
-    .fundo-vermelho{
-    background: #9F2B2F;
-    }
-    
-    .fundo-vermelho-claro{
-    background: #FFF8FA;
-    }
-    
-    .fundo-azul{
-    background: #2F5499;
-    }
+.fonte-mono{
+font-family: "Reddit Mono", serif !important;
+}
 
-    .fundo-azul-claro{
-    background: #F0FBFF;
-    }
-    
-    .fundo-verde{
-    background: #475E18;
-    
-    }
-    
-    .fundo-cinza{
-    background: #595959;
-    }
-    
-    .fundo-cinza-claro{
-    background: #FCFCFC;
-    }
-    
-    .fundo-cinza-medio{
-    background: #181818;
-    }
-    
-    .fundo-branco{
-    background: #ffffff;
-    }
-    
-    .fundo-preto{
-    background: #0D0D0D;
-    }
-    
-    /*Botão-Padrão*/
-    
-    .botão-sombra-branca {
-    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para a esquerda */
-    }
-    
-    .botão-sombra-preta {
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para a esquerda */
-    }
-    
-    /*Cabeçalho*/
-    
-    input.search-bar:focus {
-    box-shadow: 0 0 6px 0px #FF5733;
-    border-color: #FF5733; 
-    }
-    
-    input.search-bar:focus {
-    outline: none !important;
-    }
-    
-    /* Definir cor do focus-ring em links, botões ou outros elementos focáveis */
-    a:focus-visible, #button1:focus-visible, #button2:focus-visible, #button3:focus-visible,  input:focus-visible, input.search-bar:focus-visible, h1.foco:focus-visible, h2.foco:focus-visible, textarea:focus-visible, .foco:focus-visible {
-    outline: 2px solid #FF5733 !important; 
-    outline-offset: 4px !important;
-    }
-    
-    .usabilidade, .acessibilidade, .ferramentas, .sobre {
-    color: white;
-    border-radius: 15px 15px 15px 15px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    }
-    
-    .usabilidade-cheia{
-    color: white;
-    border-radius: 15px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    background: #475E18;
-    }
-    
-    .acessibilidade-cheia{
-    color: white;
-    border-radius: 15px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    background: #31579E;
-    }
-    
-    .ferramentas-cheia{
-    color: white;
-    border-radius:15px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    background: #9F2B2F;
-    }
-    
-    .sobre-cheia{
-    color: white;
-    border-radius: 15px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    background: #595959;
-    }
-    
-    .usabilidade:hover {
-    background: #475E18;
-    color: white;
-    }
-    
-    .usabilidade-ativa {
-    background: #475E18;
-    color: white;
-    border-radius: 15px 15px 0px 0px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    }
-    
-    .usabilidade-linha {
-    background: #475E18;
-    height: 16px;
-    width: 100%;
-    }
-    
-    .acessibilidade:hover {
-    background: #31579E;
-    color: white;
-    }
-    
-    .acessibilidade-ativa {
-    background: #31579E;
-    color: white;
-    border-radius: 15px 15px 0px 0px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    }
-    
-    .acessibilidade-linha {
-    background: #31579E;
-    height: 16px;
-    width: 100%;
-    }
-    
-    .ferramentas:hover {
-    background: #9F2B2F;
-    color: white;
-    }
-    
-    .ferramentas-ativa {
-    background: #9F2B2F;
-    color: white;
-    border-radius: 15px 15px 0px 0px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    }
-    
-    .ferramentas-linha {
-    background: #9F2B2F;
-    height: 16px;
-    width: 100%;
-    }
-    
-    .sobre:hover {
-    background: #595959;
-    color: white;
-    }
-    
-    .sobre-ativa {
-    background: #595959;
-    color: white;
-    border-radius: 15px 15px 0px 0px;
-    border: none;
-    text-decoration:none;
-    font-family: "Reddit Mono", serif !important;
-    }
-    
-    .sobre-linha {
-    background: #595959;
-    height: 16px;
-    width: 100%;
-    }
-    
-    .botao-acessibilidadetexto{
-    border-radius: 0px 0px 10px 10px ;
-    border: none;
-    background: #F2F2F2;
-    color: #0D0D0D;
-    font-family: "Reddit Mono", serif !important;
-    font-weight: 700;
-    }
-    
-    .botao-acessibilidadeconstraste{
-    border-radius: 0px 0px 10px 10px ;
-    border: none;
-    background: #F2F2F2;
-    color: #0D0D0D;
-    font-family: "Reddit Mono", serif !important;
-    font-weight: 700;
-    }
-    
-    .barra-de-pesquisa{
-    border-color: white;
-    background: transparent;
-    border-radius: 50px !important;
-    }
-    
-    .skip-to-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    color: #fff;
-    padding: 10px;
-    z-index: 1000;
-    text-decoration: none;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-    }
-    
-    .skip-to-content:focus {
-    transform: translateY(0);
-    }
-    
-    .navbar{
-    display: block !important;
-    }
-    
-    .navbar-toggler{
-    color: transparent;
-    border-color: transparent;
-    }
-    
-    .text-pesquisaicone{
-    font-size: 100px;
-    
-    }
-    
-    .search-bar {
-    color: #0D0D0D !important; /* Define o texto digitado em branco */
-    caret-color: white; /* Define o cursor em branco */
-    background-color: transparent; /* Opcional: deixa o fundo transparente */
-    }
-    
-    @media (max-width: 576px) {
-    .usabilidade-cheia, .acessibilidade-cheia, .ferramentas-cheia, .sobre-cheia {
-    font-size: 16px; 
-    }
-    }
-    
-    @media (min-width: 576px) {
-    .usabilidade-cheia, .acessibilidade-cheia, .ferramentas-cheia, .sobre-cheia {
-    font-size: 21px; 
-    }
-    }
-    
-    @media (min-width: 768px) {
-    .usabilidade, .acessibilidade, .ferramentas, .sobre {
-    font-size: 20px; 
-    }
-    }
-    
-    @media (min-width: 1200px) {
-    .usabilidade, .acessibilidade, .ferramentas, .sobre {
-    font-size: 20px; 
-    }
-    }
-    
-    @media (min-width: 1400px) {
-    .usabilidade, .acessibilidade, .ferramentas, .sobre {
-    font-size: 24px; 
-    }
-    }
-    
-    /*Rodapé*/
-    
-    .rodape{
-    border-radius: 45px 45px 0px 0px;
-    
-    }
-    
-    .titulo-menu-rodape{
-    font-family: "Reddit Sans", serif;
-    font-weight: 700;
-    }
-    
-    .subtitulo-menu-rodape{
-    font-family: "Reddit Mono", serif;
-    font-weight: 400;
-    text-decoration: none;
-    }
-    
-    .subtitulo-menu-rodape:hover {
-    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
-    }
-    
-    form#form input[type="text"]:focus,
-    form#form input[type="email"]:focus,
-    form#form textarea:focus {
-    box-shadow: 0 0 6px 2px #FF5733; /* Glow suave laranja */
-    border-color: #FF5733; /* Borda combinando */
-    outline: none; /* Remove o outline padrão */
-    }
-    
-    .p-inicio2 {
-    font-family: "Reddit Sans", serif !important;
-    font-weight: 500 ;
-    }
-    
-    .botao-enviar{
-    border-radius: 5px 5px 5px 5px ;
-    border: none;
-    font-family: "Reddit Mono", serif !important;
-    font-weight: 800;
-    
-    }
-    
-    @media (max-width: 576px) {
-    .p-inicio2 {
-    font-size: 19px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 576px) {
-    .p-inicio2 {
-    font-size: 19px; 
-    text-align: left;
-    }
-    }
-    
-    @media (max-width: 576px) {
-    .titulo-menu-rodape {
-    font-size: 35px; 
-    text-align: left; 
-    }
-    }
-    
-    @media (max-width: 576px) {
-    .subtitulo-menu-rodape{
-    font-size: 29px; 
-    text-align: left;
-    }
-    }
-    
-    @media (max-width: 576px) {
-    .botao-enviar {
-    font-size: 29px; 
-    text-align: left;
-    }
-    }
-    
-    @media (max-width: 576px) {
-    .altura-formulario-texto  {
-    height: 200px;
-    
-    }
-    }
-    
-    @media (min-width: 576px) {
-    .titulo-menu-rodape {
-    font-size: 48px; 
-    text-align: left; 
-    }
-    }
+.fonte-sans{
+font-family: "Reddit Sans", serif !important;
+}
 
-    @media (min-width: 576px) {
-    .titulo-menu-rodape {
-    font-size: 48px; 
-    text-align: left; 
-    }
-    }
-    
-    @media (min-width: 576px) {
-    .subtitulo-menu-rodape{
-    font-size: 29px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 576px) {
-    .botao-enviar {
-    font-size: 29px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 576px) {
-    .altura-formulario-texto  {
-    height: 200px;
-    
-    }
-    }
-    
-    @media (min-width: 768px) {
-    .p-inicio2 {
-    font-size: 16px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 768px) {
-    .titulo-menu-rodape {
-    font-size: 20px; 
-    text-align: left; 
-    }
-    }
-    
-    @media (min-width: 768px) {
-    .subtitulo-menu-rodape {
-    font-size: 16px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 768px) {
-    .botao-enviar {
-    font-size: 18px; 
-    text-align: left;
-    }
-    }
-    
-    
-    @media (min-width: 768px) {
-    .altura-formulario-texto  {
-    height: 150px;
-    
-    }
-    }
-    
-    @media (min-width: 992px) {
-    .p-inicio2 {
-    font-size: 18px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 992px) {
-    .titulo-menu-rodape {
-    font-size: 25px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 992px) {
-    .subtitulo-menu-rodape{
-    font-size: 18px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 992px) {
-    .botao-enviar {
-    font-size: 18px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 992px) {
-    .altura-formulario-texto  {
-    height: 150px;
-    
-    }
-    }
-    
-    @media (min-width: 1200px) {
-    .p-inicio2 {
-    font-size: 18px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 1200px) {
-    .titulo-menu-rodape {
-    font-size: 35px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 1200px) {
-    .subtitulo-menu-rodape{
-    font-size: 24px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 1200px) {
-    .botao-enviar {
-    font-size: 24px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 1200px) {
-    .altura-formulario-texto  {
-    height: 150px;
-    
-    }
-    }
-    
-    @media (min-width: 1400px) {
-    .p-inicio2 {
-    font-size: 18px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 1400px) {
-    .subtitulo-menu-rodape {
-    font-size: 26px; 
-    text-align: left;
-    }
-    }
-    
-    
-    @media (min-width: 1400px) {
-    .botao-enviar {
-    font-size: 26px; 
-    text-align: left;
-    }
-    }
-    
-    
-    @media (min-width: 1400px) {
-    .titulo-menu-rodape {
-    font-size: 28px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 1400px) {
-    .subtitulo-menu-rodape  {
-    font-size: 20px; 
-    text-align: left;
-    }
-    }
-    
-    @media (min-width: 1400px) {
-    .altura-formulario-texto  {
-    height: 150px;
-    
-    }
-    }
-        </style>
+
+.texto-vermelho{
+color: #9F2B2F;
+}
+
+.texto-azul{
+color: #2F5499;
+}
+
+.texto-verde{
+color: #475E18;
+
+}
+
+.texto-cinza{
+color: #595959;
+}
+
+.texto-branco{
+color: #ffffff;
+}
+
+.texto-preto{
+color: #0D0D0D !important;
+}
+
+.sem-fundo{
+background-color: transparent;
+}
+
+.fundo-vermelho{
+background: #9F2B2F;
+}
+
+.fundo-vermelho-claro{
+background: #FFF8FA;
+}
+
+.fundo-azul{
+background: #2F5499;
+}
+
+.fundo-azul-claro{
+background: #F0FBFF;
+}
+
+.fundo-verde{
+background: #475E18;
+
+}
+
+.fundo-cinza{
+background: #595959;
+}
+
+.fundo-cinza-claro{
+background: #FCFCFC;
+}
+
+.fundo-cinza-medio{
+background: #181818;
+}
+
+.fundo-branco{
+background: #ffffff;
+}
+
+.fundo-preto{
+background: #0D0D0D;
+}
+
+/*Botão-Padrão*/
+
+.botão-sombra-branca {
+box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1); /* Sombra para a esquerda */
+}
+
+.botão-sombra-preta {
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para a esquerda */
+}
+
+/*Cabeçalho*/
+
+input.search-bar:focus {
+box-shadow: 0 0 6px 0px #FF5733;
+border-color: #FF5733; 
+}
+
+input.search-bar:focus {
+outline: none !important;
+}
+
+/* Definir cor do focus-ring em links, botões ou outros elementos focáveis */
+a:focus-visible, #button1:focus-visible, #button2:focus-visible, #button3:focus-visible,  input:focus-visible, input.search-bar:focus-visible, h1.foco:focus-visible, h2.foco:focus-visible, textarea:focus-visible, .foco:focus-visible {
+outline: 2px solid #FF5733 !important; 
+outline-offset: 4px !important;
+}
+
+.usabilidade, .acessibilidade, .ferramentas, .sobre {
+color: white;
+border-radius: 15px 15px 15px 15px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+}
+
+.usabilidade-cheia{
+color: white;
+border-radius: 15px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+background: #475E18;
+}
+
+.acessibilidade-cheia{
+color: white;
+border-radius: 15px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+background: #31579E;
+}
+
+.ferramentas-cheia{
+color: white;
+border-radius:15px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+background: #9F2B2F;
+}
+
+.sobre-cheia{
+color: white;
+border-radius: 15px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+background: #595959;
+}
+
+.usabilidade:hover {
+background: #475E18;
+color: white;
+}
+
+.usabilidade-ativa {
+background: #475E18;
+color: white;
+border-radius: 15px 15px 0px 0px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+}
+
+.usabilidade-linha {
+background: #475E18;
+height: 16px;
+width: 100%;
+}
+
+.acessibilidade:hover {
+background: #31579E;
+color: white;
+}
+
+.acessibilidade-ativa {
+background: #31579E;
+color: white;
+border-radius: 15px 15px 0px 0px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+}
+
+.acessibilidade-linha {
+background: #31579E;
+height: 16px;
+width: 100%;
+}
+
+.ferramentas:hover {
+background: #9F2B2F;
+color: white;
+}
+
+.ferramentas-ativa {
+background: #9F2B2F;
+color: white;
+border-radius: 15px 15px 0px 0px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+}
+
+.ferramentas-linha {
+background: #9F2B2F;
+height: 16px;
+width: 100%;
+}
+
+.sobre:hover {
+background: #595959;
+color: white;
+}
+
+.sobre-ativa {
+background: #595959;
+color: white;
+border-radius: 15px 15px 0px 0px;
+border: none;
+text-decoration:none;
+font-family: "Reddit Mono", serif !important;
+}
+
+.sobre-linha {
+background: #595959;
+height: 16px;
+width: 100%;
+}
+
+.botao-acessibilidadetexto{
+border-radius: 0px 0px 10px 10px ;
+border: none;
+background: #F2F2F2;
+color: #0D0D0D;
+font-family: "Reddit Mono", serif !important;
+font-weight: 700;
+}
+
+.botao-acessibilidadeconstraste{
+border-radius: 0px 0px 10px 10px ;
+border: none;
+background: #F2F2F2;
+color: #0D0D0D;
+font-family: "Reddit Mono", serif !important;
+font-weight: 700;
+}
+
+.barra-de-pesquisa{
+border-color: white;
+background: transparent;
+border-radius: 50px !important;
+}
+
+.skip-to-content {
+position: absolute;
+top: 0;
+left: 0;
+background: #000;
+color: #fff;
+padding: 10px;
+z-index: 1000;
+text-decoration: none;
+transform: translateY(-100%);
+transition: transform 0.3s ease;
+}
+
+.skip-to-content:focus {
+transform: translateY(0);
+}
+
+.navbar{
+display: block !important;
+}
+
+.navbar-toggler{
+color: transparent;
+border-color: transparent;
+}
+
+.text-pesquisaicone{
+font-size: 100px;
+
+}
+
+.search-bar {
+color: #0D0D0D !important; /* Define o texto digitado em branco */
+caret-color: white; /* Define o cursor em branco */
+background-color: transparent; /* Opcional: deixa o fundo transparente */
+}
+
+@media (max-width: 576px) {
+.usabilidade-cheia, .acessibilidade-cheia, .ferramentas-cheia, .sobre-cheia {
+font-size: 16px; 
+}
+}
+
+@media (min-width: 576px) {
+.usabilidade-cheia, .acessibilidade-cheia, .ferramentas-cheia, .sobre-cheia {
+font-size: 21px; 
+}
+}
+
+@media (min-width: 768px) {
+.usabilidade, .acessibilidade, .ferramentas, .sobre {
+font-size: 20px; 
+}
+}
+
+@media (min-width: 1200px) {
+.usabilidade, .acessibilidade, .ferramentas, .sobre {
+font-size: 20px; 
+}
+}
+
+@media (min-width: 1400px) {
+.usabilidade, .acessibilidade, .ferramentas, .sobre {
+font-size: 24px; 
+}
+}
+
+/*Rodapé*/
+
+.rodape{
+border-radius: 45px 45px 0px 0px;
+
+}
+
+.titulo-menu-rodape{
+font-family: "Reddit Sans", serif;
+font-weight: 700;
+}
+
+.subtitulo-menu-rodape{
+font-family: "Reddit Mono", serif;
+font-weight: 400;
+text-decoration: none;
+}
+
+.subtitulo-menu-rodape:hover {
+text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+
+form#form input[type="text"]:focus,
+form#form input[type="email"]:focus,
+form#form textarea:focus {
+box-shadow: 0 0 6px 2px #FF5733; /* Glow suave laranja */
+border-color: #FF5733; /* Borda combinando */
+outline: none; /* Remove o outline padrão */
+}
+
+.p-inicio2 {
+font-family: "Reddit Sans", serif !important;
+font-weight: 500 ;
+}
+
+.botao-enviar{
+border-radius: 5px 5px 5px 5px ;
+border: none;
+font-family: "Reddit Mono", serif !important;
+font-weight: 800;
+
+}
+
+@media (max-width: 576px) {
+.p-inicio2 {
+font-size: 19px; 
+text-align: left;
+}
+}
+
+@media (min-width: 576px) {
+.p-inicio2 {
+font-size: 19px; 
+text-align: left;
+}
+}
+
+@media (max-width: 576px) {
+.titulo-menu-rodape {
+font-size: 35px; 
+text-align: left; 
+}
+}
+
+@media (max-width: 576px) {
+.subtitulo-menu-rodape{
+font-size: 29px; 
+text-align: left;
+}
+}
+
+@media (max-width: 576px) {
+.botao-enviar {
+font-size: 29px; 
+text-align: left;
+}
+}
+
+@media (max-width: 576px) {
+.altura-formulario-texto  {
+height: 200px;
+
+}
+}
+
+@media (min-width: 576px) {
+.titulo-menu-rodape {
+font-size: 48px; 
+text-align: left; 
+}
+}
+
+@media (min-width: 576px) {
+.titulo-menu-rodape {
+font-size: 48px; 
+text-align: left; 
+}
+}
+
+@media (min-width: 576px) {
+.subtitulo-menu-rodape{
+font-size: 29px; 
+text-align: left;
+}
+}
+
+@media (min-width: 576px) {
+.botao-enviar {
+font-size: 29px; 
+text-align: left;
+}
+}
+
+@media (min-width: 576px) {
+.altura-formulario-texto  {
+height: 200px;
+
+}
+}
+
+@media (min-width: 768px) {
+.p-inicio2 {
+font-size: 16px; 
+text-align: left;
+}
+}
+
+@media (min-width: 768px) {
+.titulo-menu-rodape {
+font-size: 20px; 
+text-align: left; 
+}
+}
+
+@media (min-width: 768px) {
+.subtitulo-menu-rodape {
+font-size: 16px; 
+text-align: left;
+}
+}
+
+@media (min-width: 768px) {
+.botao-enviar {
+font-size: 18px; 
+text-align: left;
+}
+}
+
+
+@media (min-width: 768px) {
+.altura-formulario-texto  {
+height: 150px;
+
+}
+}
+
+@media (min-width: 992px) {
+.p-inicio2 {
+font-size: 18px; 
+text-align: left;
+}
+}
+
+@media (min-width: 992px) {
+.titulo-menu-rodape {
+font-size: 25px; 
+text-align: left;
+}
+}
+
+@media (min-width: 992px) {
+.subtitulo-menu-rodape{
+font-size: 18px; 
+text-align: left;
+}
+}
+
+@media (min-width: 992px) {
+.botao-enviar {
+font-size: 18px; 
+text-align: left;
+}
+}
+
+@media (min-width: 992px) {
+.altura-formulario-texto  {
+height: 150px;
+
+}
+}
+
+@media (min-width: 1200px) {
+.p-inicio2 {
+font-size: 18px; 
+text-align: left;
+}
+}
+
+@media (min-width: 1200px) {
+.titulo-menu-rodape {
+font-size: 35px; 
+text-align: left;
+}
+}
+
+@media (min-width: 1200px) {
+.subtitulo-menu-rodape{
+font-size: 24px; 
+text-align: left;
+}
+}
+
+@media (min-width: 1200px) {
+.botao-enviar {
+font-size: 24px; 
+text-align: left;
+}
+}
+
+@media (min-width: 1200px) {
+.altura-formulario-texto  {
+height: 150px;
+
+}
+}
+
+@media (min-width: 1400px) {
+.p-inicio2 {
+font-size: 18px; 
+text-align: left;
+}
+}
+
+@media (min-width: 1400px) {
+.subtitulo-menu-rodape {
+font-size: 26px; 
+text-align: left;
+}
+}
+
+
+@media (min-width: 1400px) {
+.botao-enviar {
+font-size: 26px; 
+text-align: left;
+}
+}
+
+
+@media (min-width: 1400px) {
+.titulo-menu-rodape {
+font-size: 28px; 
+text-align: left;
+}
+}
+
+@media (min-width: 1400px) {
+.subtitulo-menu-rodape  {
+font-size: 20px; 
+text-align: left;
+}
+}
+
+@media (min-width: 1400px) {
+.altura-formulario-texto  {
+height: 150px;
+
+}
+}
+    </style>
     
         <!--Bootstrap JS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
