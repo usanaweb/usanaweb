@@ -6,7 +6,7 @@ font-weight: 900;
 
 .subtitulo-paginas-usabilidade{
 font-family: "Reddit Sans", serif;
-font-weight: 800;
+font-weight: 900;
 
 }
 
@@ -30,7 +30,7 @@ flex-shrink: 0; /* Impede o encolhimento do SVG */
 
 @media (max-width: 576px) {
 .titulo-paginas-usabilidade {
-font-size: 30px; 
+font-size: 23px; 
 text-align: left; 
 }
 }
@@ -44,7 +44,7 @@ text-align: left;
 
 @media (max-width: 576px) {
 .subtitulo-paginas-usabilidade {
-font-size:30px; 
+font-size:20px; 
 text-align: left;
 }
 }
@@ -58,10 +58,17 @@ text-align: left;
 
 @media (max-width: 576px) {
 .topico-paginas-usabilidade {
-font-size: 20px;
+font-size: 16px;
 text-align: left;
 }
 }
+
+@media (min-width: 576px) {
+    .topico-paginas-usabilidade {
+    font-size: 20px;
+    text-align: left;
+    }
+    }
 
 @media (min-width: 576px) {
 .triangulo-topico-usabilidade  {
