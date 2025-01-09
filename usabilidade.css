@@ -30,7 +30,7 @@ flex-shrink: 0; /* Impede o encolhimento do SVG */
 
 @media (max-width: 576px) {
 .titulo-paginas-usabilidade {
-font-size: 30px; 
+font-size: 29px; 
 text-align: left; 
 }
 }
