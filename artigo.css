@@ -548,3 +548,53 @@ body.dark-mode .breadcrumb-item::before {
     width: 85px !important;
   }
 }
+
+.botao-artigo{
+  border-radius: 5px 5px 5px 5px ;
+  border: none;
+  font-family: "Reddit Mono", serif !important;
+  font-weight: 800;
+  
+  }
+
+@media (max-width: 576px) {
+  .botao-artigo {
+  font-size: 18px; 
+  text-align: left;
+  }
+  }
+
+@media (min-width: 576px) {
+  .botao-artigo {
+  font-size: 29px; 
+  text-align: left;
+  }
+  }
+
+@media (min-width: 768px) {
+  .botao-artigo {
+  font-size: 18px; 
+  text-align: left;
+  }
+  }
+
+@media (min-width: 992px) {
+  .botao-artigo {
+  font-size: 18px; 
+  text-align: left;
+  }
+  }
+
+@media (min-width: 1200px) {
+  .botao-artigo {
+  font-size: 24px; 
+  text-align: left;
+  }
+  }
+
+@media (min-width: 1400px) {
+  .botao-artigo {
+  font-size: 26px; 
+  text-align: left;
+  }
+  }
