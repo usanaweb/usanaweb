@@ -145,6 +145,18 @@ body.dark-mode .breadcrumb-item::before {
   align-items: flex-start !important;
 }
 
+.botao-artigo{
+  border-radius: 5px 5px 5px 5px ;
+  border: none;
+  font-family: "Reddit Mono", serif !important;
+  font-weight: 800;
+  
+  }
+
+main a.botao-artigo:visited {
+    color: #ffffff; /* Mantém a cor padrão dos botões */
+}  
+
 @media (max-width: 576px) {
   .referencias-artigos {
     font-size: 20px;
@@ -548,14 +560,6 @@ body.dark-mode .breadcrumb-item::before {
     width: 85px !important;
   }
 }
-
-.botao-artigo{
-  border-radius: 5px 5px 5px 5px ;
-  border: none;
-  font-family: "Reddit Mono", serif !important;
-  font-weight: 800;
-  
-  }
 
 @media (max-width: 576px) {
   .botao-artigo {
