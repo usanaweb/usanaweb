@@ -112,6 +112,7 @@ body.dark-mode .breadcrumb-item::before {
   font-family: "Reddit Sans", serif;
   font-weight: 400;
   font-size: 14px;
+  padding: 0;
 }
 
 .titulo-artigo {
