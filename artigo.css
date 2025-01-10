@@ -601,12 +601,6 @@ main a.botao-artigo:visited {
   }
   }
 
-@media (max-width: 576px) {
-  .breadcrumb, .breadcrumb-item.active {
-  font-size: 12px; 
-  }
-  }
-
 @media (min-width: 576px) {
   .breadcrumb, .breadcrumb-item.active {
   font-size: 16px; 
