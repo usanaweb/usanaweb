@@ -25,7 +25,7 @@
     font-weight: 900;
     
     }
-    
+
     .botao-ferramentas{
         border-radius: 5px 5px 5px 5px ;
         border: none;
@@ -36,8 +36,8 @@
 
     main a.botao-ferramentas:visited {
         color: #ffffff; /* Mantém a cor padrão dos botões */
-    }  
-
+    } 
+    
     @media (max-width: 576px) {
     .titulo-paginas-ferramentas {
     font-size: 35px; 
