@@ -105,13 +105,11 @@ body.dark-mode .breadcrumb-item::before {
 .breadcrumb {
   font-family: "Reddit Sans", serif;
   font-weight: 600;
-  font-size: 14px;
 }
 
 .breadcrumb-item.active {
   font-family: "Reddit Sans", serif;
   font-weight: 400;
-  font-size: 14px;
 }
 
 .titulo-artigo {
@@ -600,5 +598,41 @@ main a.botao-artigo:visited {
   .botao-artigo {
   font-size: 26px; 
   text-align: left;
+  }
+  }
+
+@media (max-width: 576px) {
+  .breadcrumb, .breadcrumb-item.active {
+  font-size: 12px; 
+  }
+  }
+
+@media (min-width: 576px) {
+  .breadcrumb, .breadcrumb-item.active {
+  font-size: 16px; 
+  }
+  }
+
+@media (min-width: 768px) {
+  .breadcrumb, .breadcrumb-item.active {
+  font-size: 16px; 
+  }
+  }
+
+@media (min-width: 992px) {
+  .breadcrumb, .breadcrumb-item.active {
+  font-size: 16px; 
+  }
+  }
+
+@media (min-width: 1200px) {
+    .breadcrumb, .breadcrumb-item.active {
+    font-size: 16px; 
+    }
+    }
+
+@media (min-width: 1400px) {
+  .breadcrumb, .breadcrumb-item.active {
+  font-size: 16px; 
   }
   }
