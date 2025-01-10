@@ -26,7 +26,7 @@ font-weight: 400;
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
     .icone-email {
         display: none; /* Oculta o elemento */
     }
@@ -131,7 +131,7 @@ text-align: left;
 
 @media (min-width: 375px) {
 .p-email{
-font-size: 18px; 
+font-size: 16px; 
 text-align: left;
 }
 }
