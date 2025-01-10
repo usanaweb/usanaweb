@@ -104,7 +104,7 @@ text-align: left;
 @media (min-width: 576px) {
 .subtitulo-paginas-sobre {
 font-size: 70px; 
-text-align: center; 
+text-align: left; 
 }
 }
 
@@ -122,9 +122,23 @@ font-size: 55px;
 }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) {
 .p-email{
 font-size: 15px; 
+text-align: left;
+}
+}
+
+@media (min-width: 375px) {
+.p-email{
+font-size: 18px; 
+text-align: left;
+}
+}
+
+@media (min-width: 425px) {
+.p-email{
+font-size: 18px; 
 text-align: left;
 }
 }
@@ -264,3 +278,44 @@ text-align: left;
 }
 
 
+@media (max-width: 576px) {
+.subtitulo-contato {
+font-size: 25px; 
+
+}
+}    
+
+@media (min-width: 576px) {
+.subtitulo-contato {
+font-size: 30px; 
+
+}
+}
+
+@media (min-width: 768px) {
+.subtitulo-contato {
+font-size: 30px; 
+
+}
+}  
+
+@media (min-width: 992px) {
+.subtitulo-contato {
+font-size: 30px; 
+
+}
+}    
+
+@media (min-width: 1200px) {
+.subtitulo-contato {
+font-size: 30px; 
+
+}
+}    
+
+@media (min-width: 1400px) {
+.subtitulo-contato {
+font-size: 30px; 
+
+}
+}    
