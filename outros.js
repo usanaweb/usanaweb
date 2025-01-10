@@ -338,10 +338,14 @@ if (isDarkMode) {
 
 
 
-    // Alterar a cor do texto para elementos com a classe 'texto-preto', excluindo o botão "Enviar"
+    // Alterar a cor do texto para elementos com a classe 'texto-preto', excluindo botões específicos
     const textoPretoElements = document.querySelectorAll('.texto-preto');
     textoPretoElements.forEach(element => {
-        if (!element.classList.contains('botao-enviar') && !element.classList.contains('botao-artigo')) {  // Excluir o botão "Enviar" e dos Artigos
+        if (
+            !element.classList.contains('botao-enviar') && 
+            !element.classList.contains('botao-artigo') && 
+            !element.classList.contains('botao-ferramentas') // Excluir também o botão de ferramentas
+        ) {
             if (isDarkMode) {
                 element.style.setProperty('color', 'white', 'important');  // Cor branca no modo escuro
             } else {
@@ -349,6 +353,7 @@ if (isDarkMode) {
             }
         }
     });
+
 
     // Selecionar os elementos com a classe 'fundo-verde-claro'
 const elementosFundoVerdeClaro = document.querySelectorAll('.fundo-verde-claro');
