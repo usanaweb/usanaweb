@@ -237,7 +237,7 @@ main a.botao-artigo:visited {
 
 @media (max-width: 576px) {
   .subtitulo-artigo {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -252,7 +252,7 @@ main a.botao-artigo:visited {
 @media (max-width: 576px) {
   .p-artigo,
   .resumo-texto {
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
   }
 }
