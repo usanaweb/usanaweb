@@ -26,7 +26,68 @@ font-weight: 400;
 
 }
 
+@media (max-width: 320px) {
+    .icone-email {
+        display: none; /* Oculta o elemento */
+    }
+}
+
 @media (max-width: 576px) {
+.icone-email {
+width: 20px;
+height:20px;
+
+}
+}
+
+@media (min-width: 576px) {
+.icone-email {
+width: 40px;
+height:40px;
+
+}
+}
+
+@media (min-width: 768px) {
+.icone-email {
+width: 40px;
+height:40px;
+
+}
+}
+
+@media (min-width: 992px) {
+.icone-email {
+width: 40px;
+height:40px;
+
+}
+}
+
+@media (min-width: 1200px) {
+.icone-email {
+width: 40px;
+height:40px;
+
+}
+}
+
+@media (min-width: 1400px) {
+.icone-email {
+width: 40px;
+height:40px;
+
+}
+}
+
+@media (max-width: 576px) {
+.titulo-paginas-sobre {
+font-size: 35px; 
+text-align: left !important; 
+}
+}
+
+@media (min-width: 576px) {
 .titulo-paginas-sobre {
 font-size: 49px; 
 text-align: left; 
@@ -35,28 +96,55 @@ text-align: left;
 
 @media (max-width: 576px) {
 .subtitulo-paginas-sobre {
+font-size: 30px; 
+text-align: left; 
+}
+}
+
+@media (min-width: 576px) {
+.subtitulo-paginas-sobre {
 font-size: 70px; 
 text-align: center; 
 }
 }
 
 @media (max-width: 576px) {
-#titulo-contato {
-font-size: 70px;
-text-align: left;
-}
-}
-
-
-@media (max-width: 576px) {
 .subtopico-paginas-sobre {
-font-size: 55px; 
+font-size: 25px; 
 
 }
 }    
 
+@media (min-width: 576px) {
+.subtopico-paginas-sobre {
+font-size: 55px; 
+
+}
+}
+
 @media (max-width: 576px) {
-.p-inicio-sobre, .p-email{
+.p-email{
+font-size: 15px; 
+text-align: left;
+}
+}
+
+@media (min-width: 576px) {
+.p-email{
+font-size: 25px; 
+text-align: left;
+}
+}
+
+@media (max-width: 576px) {
+.p-inicio-sobre {
+font-size: 18px; 
+text-align: left;
+}
+}
+
+@media (min-width: 576px) {
+.p-inicio-sobre {
 font-size: 25px; 
 text-align: left;
 }
