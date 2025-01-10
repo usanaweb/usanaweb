@@ -252,7 +252,7 @@ main a.botao-artigo:visited {
 @media (max-width: 576px) {
   .p-artigo,
   .resumo-texto {
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
   }
 }
