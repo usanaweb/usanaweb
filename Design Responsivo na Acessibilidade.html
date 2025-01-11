@@ -767,28 +767,64 @@
                     <h2 class="texto-azul titulo-artigo foco" tabindex="0">Design Responsivo na Acessibilidade</h2>
                 </div>
         
-                <!-- Artigo -->
-                <div class="container-fluid m-0 p-0">
+                <!-- Artigo Telas Maiores-->
+                <div class="container-fluid m-0 p-0 d-none d-sm-flex flex-column">
                     <div class="row mb-5 mx-3 px-0 px-xxl-5 px-xl-5 px-lg-5 px-sm-4">
                         
                         <div class="d-flex align-items-center w-100 ps-lg-0 ps-md-4 ps-sm-0 ps-0">
                         
                             <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 ms-0 ms-xxl-0 ms-xl-0 ms-lg-0 ms-md-0 ms-sm-0">
-                                <img class="img-fluid text-center w-75" id=imagem-autora aria-hidden="true" src="Imagens/Responsável.webp" width="20px" height="20px" >
+                                <img class="img-fluid text-center w-75" id=imagem-autora aria-hidden="true" src="Imagens/Responsável.webp" width="20px" height="20px" loading="lazy">
                             </div>
-        
+
                             
                             <div class="col-xxl-8 col-xl-3 col-lg-5 col-md-4 col-sm-5 col-5 d-flex flex-column">
                                 <a class="texto-autora-artigo texto-azul" href="sobre.html#responsavel">Paula Oliveira</a>
-                                <p class= "m-0 texto-detalhe-artigo texto-preto">16 de Dezembro de 2024</p>
+                                <p class= "m-0 texto-detalhe-artigo texto-preto">17 de Dezembro de 2024</p>
                             </div>
-        
+
                             <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 ms-auto me-xxl-4 me-xl-4 me-lg-0 me-md-0 me-sm-0 me-0 d-flex flex-column align-items-end">
                                 <p class="m-0 texto-autora-artigo text-end texto-preto">Tempo de leitura:</p>
-                                <p class="m-0 texto-detalhe-artigo texto-preto">10 min</p>
+                                <p class="m-0 texto-detalhe-artigo texto-preto">3 min</p>
                             </div>
-        
+
                         </div>
+                    </div>
+                </div>
+
+                <!-- Artigo Telas Mobile-->
+                <div class="container-fluid m-0 p-0 d-block d-sm-none">
+                    <div class="row mb-5 mx-3 px-0 px-xxl-5 px-xl-5 px-lg-5 px-sm-4">
+                        
+                        <div class="d-flex align-items-center w-100 ps-lg-0 ps-md-4 ps-sm-0 ps-0">
+                        
+                            <div class="col-4 ms-0">
+                                <img class="img-fluid text-center w-75" id=imagem-autora aria-hidden="true" src="Imagens/Responsável.webp" width="20px" height="20px" loading="lazy">
+                            </div>
+
+                            <div class="col-8 d-flex flex-column">
+                                <a class="texto-autora-artigo texto-azul" href="sobre.html#responsavel">Paula Oliveira</a>
+
+
+                                <div class="col-12 mt-0 mb-1 p-0 d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-date-fill texto-azul" viewBox="0 0 16 16">
+                                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2"/>
+                                        <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a13 13 0 0 1 1.313-.805h.632z"/>
+                                    </svg>
+                                    <p class= "ms-2 m-0 texto-detalhe-artigo texto-preto">17/dez/2024</p>
+                                </div>
+
+                                <div class="col-12 mt-0 p-0 d-flex align-items-center">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock-fill texto-azul" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                    </svg>
+                                    <p class="ms-2 m-0 texto-detalhe-artigo texto-preto">3 min de leitura</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
                     </div>
                 </div>
         
